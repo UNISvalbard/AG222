@@ -33,40 +33,58 @@ A GeoSimulator last updated in 2009 developed by Equinor as part of their inter-
 
 #### Svalbox
 
-UNIS-developed geoscience integration portal, including digital outcrop models. See https://www.svalbox.no/
+UNIS-developed geoscience integration portal, including digital outcrop models. See [https://www.svalbox.no/](https://www.svalbox.no/).
 
 #### TopoSvalbard
+
 A topographic map of Svalbard also includes aerial images, terrain models, old oblique aerial photography. See http://Toposvalbard.npolar.no 
-####Svalbardkartet
+
+#### Svalbardkartet
+
 It includes a geological map at 1:250 000 and 1:750 000 scale, and other relevant data sets. See http://svalbardkartet.npolar.no/html5/Index.html (turn on Geology).
-####Norwegian Polar Institute Geodata portal
+
+#### Norwegian Polar Institute Geodata portal
+
 Access to many of the maps and data in TopoSvalbard and Svalbardkartet, http://geodata.npolar.no 
-####Stratigraphic lexicon of Svalbard
+
+#### Stratigraphic lexicon of Svalbard
+
 An overview of most of the formations you will work on. Paper copy in UNIS library (Dallmann 1999), online version available at http://nhm2.uio.no/norges/litho/svalbard/index.htm  
-####Stratigraphic lexicon
+
+#### Stratigraphic lexicon
+
 Stratigraphic lexicon for Norwegian offshore areas, including some timescales and templates. http://nhm2.uio.no/norges/litho.html 
-####Norwegian Petroleum Directorate’s FactMaps
+
+#### Norwegian Petroleum Directorate’s FactMaps
+
 Norwegian Petroleum Directorate’s FactMaps on the Norwegian Continental Shelf. http://www.npd.no/en/ (Advanced FactMaps)
-####Research in Svalbard database
+
+#### Research in Svalbard database
+
 A searchable database of research projects in Svalbard. Run by Svalbard Science Forum/Norwegian Research Council. At: https://researchinsvalbard.no/
-####Google Scholar
+
+#### Google Scholar
+
 Literature search, focus particularly on the methods section of articles – what do geologists do, and what methods do they use? Use the direct import function for EndNote to save time! http://Scholar.google.com   
-####Google Earth
+
+#### Google Earth
+
 Global resource for geosciences works on the web, desktop, and mobile, but unfortunately poor base maps from Svalbard. But can include layers streamed from Geodata.npolar.no directly in GE. https://www.google.com/earth/versions/ 
 
 
-##Exercises
+## Exercises
 
 Follow the tasks below at your own pace. Make screenshots of your results to document your answers/progress. We will, at regular intervals, pause and get a student to present (by sharing their screen and clicking the right buttons) how the task was achieved and what the results are.
 
 :  These are individual exercises. However, you can work in pairs if you prefer, but each of you should deliver the exercises individually.
+
 ```{figure} assets/1_student_deliveries.png
 :name: 1_student_deliveries
 
 Deliver the exercise in the MS Teams folder.
 ```
 
-###1. Virtual field trip preparation
+### 1. Virtual field trip preparation
 
 Prepare 1 slide on the area you will be working on for your virtual field trip – where is it, how would you get there (in summer and in winter/spring) and what geological units are exposed there? 
 
@@ -76,7 +94,7 @@ Prepare 1 slide on the area you will be working on for your virtual field trip �
 List of names for each group.
 ```
 
-###2. Using TopoSvalbard
+### 2. Using TopoSvalbard
 
 Find and highlight the following locations using http://toposvalbard.npolar.no
 
@@ -93,7 +111,7 @@ Locations B: Vassdalen, Blåhuken, Kvadehuken, Plurdalen, Raddedalen, Hopen, Tro
 : What do the locations B have in common? (hint – use Svalbox map in parallel)
 
 
-###3. Using Svalbardkartet
+### 3. Using Svalbardkartet
 
 On SvalbardKartet (http://svalbardkartet.npolar.no/html5/index.html?viewer=svalbardkartet.html5) note the following:
 
@@ -109,7 +127,7 @@ Ebbadalen Formation
 c. Draw a line along the Permian-Triassic boundary and export your map as a geoTiff
 
 
-###4. Oblique aerial imagery
+### 4. Oblique aerial imagery
 
 On TopoSvalbard, there are some very good old oblique area photographs. These can be used for planning field campaigns, and even to make digital models. You access them by first selecting the satellite base map, then marking on “old aerial photographs”, and clicking the arrows.
 
@@ -131,7 +149,7 @@ a. Navigate to your field area, and include an overview of what images are avail
 b. Take screenshots of a selection of 15 good quality partly overlapping images and save for future photogrammetry project
 
 
-###5. ResearchInSvalbard
+### 5. ResearchInSvalbard
 
 The RiS database is a useful portal to find out what research was done in Svalbard – as with all databases it has some issues (the major one being that there are many projects there that were never conducted for a variety of reasons), but overall it is a very useful tool to get an overview and plan your research so that you don’t do double-work. It can also help in logistical co-ordination between different field groups. Access it at https://researchinsvalbard.no/ and try to figure out the tasks below.
 
@@ -150,7 +168,7 @@ f. From which country/institute did they come?
 g. List ca. 10 different campaigns in an appropriate table.
 
 
-###6. Norwegian Petroleum Directorate FactMaps
+### 6. Norwegian Petroleum Directorate FactMaps
 
 The Norwegian Continental Shelf is – thanks to petroleum activity – one of the most data-rich part of the world, with thousands of exploration wells, and millions of kilometres of 2D and 3D seismic surveys.  This allows much quality geoscientific research, and also provides a framework for offshore CO2 storage (ongoing at Sleipner since 1996, Snøhvit since 2008 and Aurora starting now/Longship project). All data are owned by the companies who gather them, but become public after 2 years (raw well logs), 5 years (seismic data) and 20 years (interpretations, reports etc.). The Norwegian Petroleum Directorate (NPD) manages this immense data set, and also offers useful FactPages and FactMaps to look up – see https://www.npd.no/en/ . The only downside is that while Svalbard is geologically certainly part of the Barents Shelf, politically it is not, and Svalbard exploration data (see Petroleum, coal and research drilling onshore Svalbard: a historical perspective) is not readily available.
 
@@ -166,7 +184,7 @@ NPD FactMap from the Norwegian coast and Svalbard.
 NPD FactMap from the Norwegian coast with the active exploration wells.
 ```
 
-####Use the NPD FactMaps to address the following tasks:
+#### Use the NPD FactMaps to address the following tasks:
 a. Where are the exploration wells? 
 b. What is the northernmost well? 
 c. When was the last exploration well drilled?
@@ -180,8 +198,8 @@ g. What is the age of the structures?
 
 Science is not about starting from scratch, but about contributing new knowledge to existing ones. You thus need to know what is the state of the art, and efficiently use referencing. UNIS has a license for EndNote reference manager which we will be using in the course. It allows automatic importing of references, and including pdfs of the references, for easy archiving.
 
-```{figure} assets/7_1_map_npd.png
-:name: 7_1_map_npd
+```{figure} assets/8_1.png
+:name: 8_1
 
 NPD FactMap from the Norwegian coast and Svalbard.
 ```
@@ -195,7 +213,7 @@ d. Focus on the data and methods of each paper
 - What is done well, and what could be improved in the articles?
 
 
-###8. SvalSIM – the svalbard Geosimulator
+### 8. SvalSIM – the svalbard Geosimulator
 
 a. D:\SvalSIM\ and also on Svalbox drive
 b. Is there any data available for your area?
