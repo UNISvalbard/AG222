@@ -1,0 +1,24 @@
+title: "AG 222 Compendium"
+logo: ./content/assets/UNIS_logo.gif
+author: Nil Rodes, Peter Betlem, Kim Senger
+copyright: "2022"
+
+repository:
+  url: https://github.com/UNISvalbard/AG222
+
+html:
+  use_repository_button: True
+  use_issues_button: True
+#  extra_navbar:
+#  extra_footer:
+  home_page_in_navbar: Sign up for the <a href="https://www.unis.no/course/ag-222-integrated-geological-methods-from-outcrop-to-geomodel/">UNIS AG222 course</a>
+
+launch_buttons:
+  binderhub_url: ""
+
+execute:
+  execute_notebooks: "auto"
+
+parse:
+  myst_extended_syntax: true
+  myst_header_anchors: 4

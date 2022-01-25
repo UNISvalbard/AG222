@@ -1,0 +1,13 @@
+format: jb-book
+root: landing-page.md
+parts:
+- caption: Data mining
+  chapters:
+  - file: content/lessons/data_mining/data_mining.md
+- caption: GIS
+  chapters:
+  - file: content/lessons/gis/gis.md
+- caption: Resources
+  chapters:
+  - file: content/lessons/about/seismic_lab.md
+
