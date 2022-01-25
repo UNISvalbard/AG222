@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data mining and data integration &#8212; AG 222 Compendium</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/UNIS_logo.gif" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">AG 222 Compendium</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/content/lessons/data_mining/data_mining.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/UNISvalbard/AG222"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/UNISvalbard/AG222/issues/new?title=Issue%20on%20page%20%2Fcontent/lessons/data_mining/data_mining.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#main-learning-objectives">
+   Main learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-sets-and-resources">
+   Data sets and resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#software">
+     Software:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#petrel">
+       Petrel
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#svalsim">
+       SvalSIM
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relevant-online-resources">
+     Relevant online resources:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#svalbox">
+       Svalbox
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#toposvalbard">
+       TopoSvalbard
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data mining and data integration</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#main-learning-objectives">
+   Main learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-sets-and-resources">
+   Data sets and resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#software">
+     Software:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#petrel">
+       Petrel
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#svalsim">
+       SvalSIM
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relevant-online-resources">
+     Relevant online resources:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#svalbox">
+       Svalbox
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#toposvalbard">
+       TopoSvalbard
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-mining-and-data-integration">
+<h1>Data mining and data integration<a class="headerlink" href="#data-mining-and-data-integration" title="Permalink to this headline">¶</a></h1>
+<p>This module covers the basic online resources to find the information you need to conduct research in Svalbard.</p>
+<div class="section" id="main-learning-objectives">
+<h2>Main learning objectives<a class="headerlink" href="#main-learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>This course is split in several modules, consisting of interactive lectures walkthroughs, and exercises.
+The main learning objectives are:</p>
+<ul class="simple">
+<li><p>Familiarize and use Svalbox online portal</p></li>
+<li><p>Familiarize and use online resources</p></li>
+<li><p>Find out information</p></li>
+<li><p>Present your findings to the class</p></li>
+</ul>
+</div>
+<div class="section" id="data-sets-and-resources">
+<h2>Data sets and resources<a class="headerlink" href="#data-sets-and-resources" title="Permalink to this headline">¶</a></h2>
+<p>The following provides a short overview of the most relevant resources for this module (and for the entire course):</p>
+<ul class="simple">
+<li><p>Course material is provided on the AG222 Teams folder – use your UNIS credentials to log in.</p></li>
+<li><p>We have set up a course data server, accessed from the UNIS network (also via VPN), under  \svalbox\AG222 (again, use your UNIS credentials to log in).</p></li>
+</ul>
+<div class="section" id="software">
+<h3>Software:<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="petrel">
+<h4>Petrel<a class="headerlink" href="#petrel" title="Permalink to this headline">¶</a></h4>
+<p>A industry-standard subsurface software with a very steep learning tool. We will be using Petrel in the Geomodelling part as part of the Billefjorden Trough work after Easter.</p>
+</div>
+<div class="section" id="svalsim">
+<h4>SvalSIM<a class="headerlink" href="#svalsim" title="Permalink to this headline">¶</a></h4>
+<p>A GeoSimulator last updated in 2009 developed by Equinor as part of their inter-disciplinary Svalex student expeditions ran around Svalbard. Available for Windows on the D: drive of UNIS PCs, it can also be used on your laptops during the course.</p>
+</div>
+</div>
+<div class="section" id="relevant-online-resources">
+<h3>Relevant online resources:<a class="headerlink" href="#relevant-online-resources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="svalbox">
+<h4>Svalbox<a class="headerlink" href="#svalbox" title="Permalink to this headline">¶</a></h4>
+<p>UNIS-developed geoscience integration portal, including digital outcrop models. See https://www.svalbox.no/</p>
+</div>
+<div class="section" id="toposvalbard">
+<h4>TopoSvalbard<a class="headerlink" href="#toposvalbard" title="Permalink to this headline">¶</a></h4>
+<p>A topographic map of Svalbard also includes aerial images, terrain models, old oblique aerial photography. See http://Toposvalbard.npolar.no
+####Svalbardkartet
+It includes a geological map at 1:250 000 and 1:750 000 scale, and other relevant data sets. See http://svalbardkartet.npolar.no/html5/Index.html (turn on Geology).
+####Norwegian Polar Institute Geodata portal
+Access to many of the maps and data in TopoSvalbard and Svalbardkartet, http://geodata.npolar.no
+####Stratigraphic lexicon of Svalbard
+An overview of most of the formations you will work on. Paper copy in UNIS library (Dallmann 1999), online version available at http://nhm2.uio.no/norges/litho/svalbard/index.htm<br />
+####Stratigraphic lexicon
+Stratigraphic lexicon for Norwegian offshore areas, including some timescales and templates. http://nhm2.uio.no/norges/litho.html
+####Norwegian Petroleum Directorate’s FactMaps
+Norwegian Petroleum Directorate’s FactMaps on the Norwegian Continental Shelf. http://www.npd.no/en/ (Advanced FactMaps)
+####Research in Svalbard database
+A searchable database of research projects in Svalbard. Run by Svalbard Science Forum/Norwegian Research Council. At: https://researchinsvalbard.no/
+####Google Scholar
+Literature search, focus particularly on the methods section of articles – what do geologists do, and what methods do they use? Use the direct import function for EndNote to save time! http://Scholar.google.com<br />
+####Google Earth
+Global resource for geosciences works on the web, desktop, and mobile, but unfortunately poor base maps from Svalbard. But can include layers streamed from Geodata.npolar.no directly in GE. https://www.google.com/earth/versions/</p>
+<p>##Exercises</p>
+<p>Follow the tasks below at your own pace. Make screenshots of your results to document your answers/progress. We will, at regular intervals, pause and get a student to present (by sharing their screen and clicking the right buttons) how the task was achieved and what the results are.</p>
+<p>:  These are individual exercises. However, you can work in pairs if you prefer, but each of you should deliver the exercises individually.</p>
+<div class="figure align-default" id="student-deliveries">
+<img alt="../../../_images/1_student_deliveries.png" src="../../../_images/1_student_deliveries.png" />
+<p class="caption"><span class="caption-text">Deliver the exercise in the MS Teams folder.</span><a class="headerlink" href="#student-deliveries" title="Permalink to this image">¶</a></p>
+</div>
+<p>###1. Virtual field trip preparation</p>
+<p>Prepare 1 slide on the area you will be working on for your virtual field trip – where is it, how would you get there (in summer and in winter/spring) and what geological units are exposed there?</p>
+<div class="figure align-default" id="student-groups-2022">
+<img alt="../../../_images/2_student_groups_2022.png" src="../../../_images/2_student_groups_2022.png" />
+<p class="caption"><span class="caption-text">List of names for each group.</span><a class="headerlink" href="#student-groups-2022" title="Permalink to this image">¶</a></p>
+</div>
+<p>###2. Using TopoSvalbard</p>
+<p>Find and highlight the following locations using http://toposvalbard.npolar.no</p>
+<div class="figure align-default" id="id1">
+<img alt="../../../_images/3_toposvalbard.gif" src="../../../_images/3_toposvalbard.gif" />
+<p class="caption"><span class="caption-text">Showing how to make a search in Toposvalbard.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Mark on all locations together; then screenshot with result and paste in below.</p>
+<p>Locations A: Festningen, Ebbadalen, Konusdalen, Agardhbukta, Kvalpynten, Farmhamna, Kapp Thordsen, Svea, Verlegenhuken, Sørkapp, Botneheia, Pyramiden, + your own Virtual Field Trip area
+Locations B: Vassdalen, Blåhuken, Kvadehuken, Plurdalen, Raddedalen, Hopen, Tromsøbreen, Colesbukta, Berzeliusdalen, Grønnfjorden, Reindalspasset, Kapp Laila, Sarstangen, Petuniabukta, Adventdalen, Sysselmannbreen
+: What do the locations B have in common? (hint – use Svalbox map in parallel)</p>
+<p>###3. Using Svalbardkartet</p>
+<p>On SvalbardKartet (http://svalbardkartet.npolar.no/html5/index.html?viewer=svalbardkartet.html5) note the following:</p>
+<p>a. What are the units exposed between Kapp Starostin and Festiningsodden? What is their thickness? Which way is stratigraphically younger?</p>
+<p>b. List and highlight at least five locations where you could look at the following formations.
+Wilhelmøya Subgroup
+Kapp Starostin Formation
+Diabasodden Suite
+Helvetiafjellet Formation
+Ebbadalen Formation</p>
+<p>c. Draw a line along the Permian-Triassic boundary and export your map as a geoTiff</p>
+<p>###4. Oblique aerial imagery</p>
+<p>On TopoSvalbard, there are some very good old oblique area photographs. These can be used for planning field campaigns, and even to make digital models. You access them by first selecting the satellite base map, then marking on “old aerial photographs”, and clicking the arrows.</p>
+<div class="figure align-default" id="old-imagery-toposvalbard">
+<img alt="../../../_images/4_2_old_imagery_toposvalbard.gif" src="../../../_images/4_2_old_imagery_toposvalbard.gif" />
+<p class="caption"><span class="caption-text">Showing how to activate and search an old aerial photo from toposvalbard.</span><a class="headerlink" href="#old-imagery-toposvalbard" title="Permalink to this image">¶</a></p>
+</div>
+<p>:  Here is an example of a digital model made using 10 screenshots of these images from Fuglefjellet:</p>
+<div class="figure align-default" id="digital-model-example">
+<img alt="../../../_images/5_digital_model_example.png" src="../../../_images/5_digital_model_example.png" />
+<p class="caption"><span class="caption-text">Example of a digital model made using 10 screenshots of these images from Fuglefjellet.</span><a class="headerlink" href="#digital-model-example" title="Permalink to this image">¶</a></p>
+</div>
+<p>a. Navigate to your field area, and include an overview of what images are available, and their overall quality (cloud cover etc.)
+b. Take screenshots of a selection of 15 good quality partly overlapping images and save for future photogrammetry project</p>
+<p>###5. ResearchInSvalbard</p>
+<p>The RiS database is a useful portal to find out what research was done in Svalbard – as with all databases it has some issues (the major one being that there are many projects there that were never conducted for a variety of reasons), but overall it is a very useful tool to get an overview and plan your research so that you don’t do double-work. It can also help in logistical co-ordination between different field groups. Access it at https://researchinsvalbard.no/ and try to figure out the tasks below.</p>
+<div class="figure align-default" id="research-in-svalbard">
+<img alt="../../../_images/6_research_in_svalbard.png" src="../../../_images/6_research_in_svalbard.png" />
+<p class="caption"><span class="caption-text">Example of a project search in the ResearchInSvalbard database.</span><a class="headerlink" href="#research-in-svalbard" title="Permalink to this image">¶</a></p>
+</div>
+<p>a. Where have geologists worked on Svalbard in the summer of 2019?
+b. What about from 2005 to 2015?
+c. What was the objective of the fieldwork?
+d. What methods did they use?
+e. Did they publish any results?
+f. From which country/institute did they come?
+g. List ca. 10 different campaigns in an appropriate table.</p>
+<p>###6. Norwegian Petroleum Directorate FactMaps</p>
+<p>The Norwegian Continental Shelf is – thanks to petroleum activity – one of the most data-rich part of the world, with thousands of exploration wells, and millions of kilometres of 2D and 3D seismic surveys.  This allows much quality geoscientific research, and also provides a framework for offshore CO2 storage (ongoing at Sleipner since 1996, Snøhvit since 2008 and Aurora starting now/Longship project). All data are owned by the companies who gather them, but become public after 2 years (raw well logs), 5 years (seismic data) and 20 years (interpretations, reports etc.). The Norwegian Petroleum Directorate (NPD) manages this immense data set, and also offers useful FactPages and FactMaps to look up – see https://www.npd.no/en/ . The only downside is that while Svalbard is geologically certainly part of the Barents Shelf, politically it is not, and Svalbard exploration data (see Petroleum, coal and research drilling onshore Svalbard: a historical perspective) is not readily available.</p>
+<div class="figure align-default" id="map-npd">
+<img alt="../../../_images/7_1_map_npd.png" src="../../../_images/7_1_map_npd.png" />
+<p class="caption"><span class="caption-text">NPD FactMap from the Norwegian coast and Svalbard.</span><a class="headerlink" href="#map-npd" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="factmap-npd">
+<img alt="../../../_images/7_2_factmap_npd.png" src="../../../_images/7_2_factmap_npd.png" />
+<p class="caption"><span class="caption-text">NPD FactMap from the Norwegian coast with the active exploration wells.</span><a class="headerlink" href="#factmap-npd" title="Permalink to this image">¶</a></p>
+</div>
+<p>####Use the NPD FactMaps to address the following tasks:
+a. Where are the exploration wells?
+b. What is the northernmost well?
+c. When was the last exploration well drilled?
+d. Which areas are currently licensed by oil companies?
+e. Which areas are licensed on the Russian side of the border? (hint: - see http://wwfarcticmaps.org/)
+f. What are the main geological elements?
+g. What is the age of the structures?</p>
+<p>###7. Article search and methods</p>
+<p>Science is not about starting from scratch, but about contributing new knowledge to existing ones. You thus need to know what is the state of the art, and efficiently use referencing. UNIS has a license for EndNote reference manager which we will be using in the course. It allows automatic importing of references, and including pdfs of the references, for easy archiving.</p>
+<div class="figure align-default" id="id2">
+<img alt="../../../_images/7_1_map_npd.png" src="../../../_images/7_1_map_npd.png" />
+<p class="caption"><span class="caption-text">NPD FactMap from the Norwegian coast and Svalbard.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>a. Search for 5 relevant articles each using Google Scholar
+b. Load these into your EndNote library and include the .pdf file
+c. Each group to deliver a document including EndNote library of 20 articles and 3 corresponding word document with the bibliographic style of Geology, Earth-Science Reviews and Nature
+d. Focus on the data and methods of each paper</p>
+<ul class="simple">
+<li><p>What have the researchers been doing?</p></li>
+<li><p>Could you reproduce their research?</p></li>
+<li><p>What is done well, and what could be improved in the articles?</p></li>
+</ul>
+<p>###8. SvalSIM – the svalbard Geosimulator</p>
+<p>a. D:\SvalSIM\ and also on Svalbox drive
+b. Is there any data available for your area?
+c. Make screenshots of relevant views of your study site
+d. Consider using SvalSIM to “film” your journey from Longyearbyen to your field area</p>
+<div class="figure align-default" id="geo-svalbard">
+<img alt="../../../_images/9_1_geo_svalbard.png" src="../../../_images/9_1_geo_svalbard.png" />
+</div>
+<div class="figure align-default" id="id3">
+<img alt="../../../_images/9_2_geo_svalbard.png" src="../../../_images/9_2_geo_svalbard.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content\lessons\data_mining"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Nil Rodes, Peter Betlem, Kim Senger<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
