@@ -19,7 +19,7 @@ The following provides a short overview of the most relevant resources for this 
 - Course material is provided on the AG222 Teams folder – use your UNIS credentials to log in.
 - We have set up a course data server, accessed from the UNIS network (also via VPN), under  \\svalbox\AG222 (again, use your UNIS credentials to log in).
 
-### Software:
+### Software
 
 #### Petrel
 
