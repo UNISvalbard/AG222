@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Seismic lab (Signehamna)" href="../about/seismic_lab.html" />
-    <link rel="prev" title="Data mining and data integration" href="../data_mining/data_mining.html" />
+    <link rel="prev" title="Screen recorder" href="../screen_recording/screen_recording.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -98,6 +98,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../data_mining/data_mining.html">
    Data mining and data integration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../svalbox_server/svalbox_server.html">
+   Svalbox student server
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../screen_recording/screen_recording.html">
+   Screen recorder
   </a>
  </li>
 </ul>
@@ -515,6 +525,9 @@ Those who would like an open and free experience, may try QGIS and follow the tu
 In Location, define the folder path where you want to save the project.
 This last step is important to have a good data structure because everything related to your project will be saved there.
 Also, select the tick that says <em>Create a new folder for this project</em>.</p>
+<div class="figure align-default" id="create-project">
+<img alt="../../../_images/1_create_project.gif" src="../../../_images/1_create_project.gif" />
+</div>
 <div class="section" id="specify-a-coordinate-system-for-your-project">
 <h3>Specify a coordinate system for your project<a class="headerlink" href="#specify-a-coordinate-system-for-your-project" title="Permalink to this headline">¶</a></h3>
 <p>The horizontal coordinate System for a global scene is limited to WGS1984.
@@ -522,6 +535,9 @@ We can define a vertical coordinate system for a map or scene.</p>
 <p>In the Table of Contents right click on the layer or map you want to modify &gt; Properties &gt; Coordinate system.</p>
 <p>The coordinate System for Svalbard is: WGS1984 UTM Zone 33N.
 You can do a quick search by looking for the EPSG code 32633.</p>
+<div class="figure align-default" id="coordinate-system">
+<img alt="../../../_images/2_coordinate_system.gif" src="../../../_images/2_coordinate_system.gif" />
+</div>
 <div class="suggestion admonition">
 <p class="admonition-title">Georeferencing</p>
 <p>We have already gone over georeferencing and EPSG codes in []{content:georeferencing}.
@@ -543,10 +559,16 @@ Coordinate System: Select a layer that has already the projection you want &gt; 
 <h4>Importing data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h4>
 <p>Map &gt; Add data &gt; Go to the folder where you saved the data you want to import.
 Once you add it, it will appear as a new layer in the Table of Contents.</p>
+<div class="figure align-default" id="add-data">
+<img alt="../../../_images/3_add_data.gif" src="../../../_images/3_add_data.gif" />
+</div>
 </div>
 <div class="section" id="importing-gpx-tracks">
 <h4>Importing GPX tracks<a class="headerlink" href="#importing-gpx-tracks" title="Permalink to this headline">¶</a></h4>
 <p>ArcGIS Pro uses a Georeferencing tool to import GPX tracks.</p>
+<div class="figure align-default" id="import-gpx">
+<img alt="../../../_images/4_import_gpx.gif" src="../../../_images/4_import_gpx.gif" />
+</div>
 </div>
 <div class="section" id="importing-a-digital-terrain-model">
 <h4>Importing a digital terrain model<a class="headerlink" href="#importing-a-digital-terrain-model" title="Permalink to this headline">¶</a></h4>
@@ -561,26 +583,38 @@ Once you add it, it will appear as a new layer in the Table of Contents.</p>
 </div>
 <div class="section" id="adding-new-features">
 <h4>Adding new features<a class="headerlink" href="#adding-new-features" title="Permalink to this headline">¶</a></h4>
-<p>Option 1
-: Open Catalog &gt; Right Click on the geodatabase file (.gdb) &gt; New &gt; Feature Class &gt; Define a name and the type of feature you want to create.
+<p><strong>Option 1</strong>
+Open Catalog &gt; Right Click on the geodatabase file (.gdb) &gt; New &gt; Feature Class &gt; Define a name and the type of feature you want to create.
 Once it is created, drag the new .gdb to the Table of Contents.
 Select the new layer &gt; Edit &gt; Create &gt; Define the feature you want to work with.</p>
-<p>Option 2
-: Geoprocessing Pane &gt; Search for Create Feature Class.
+<div class="figure align-default" id="new-features">
+<img alt="../../../_images/5.1_new_features.gif" src="../../../_images/5.1_new_features.gif" />
+</div>
+<p><strong>Option 2</strong>
+Geoprocessing Pane &gt; Search for Create Feature Class.
 Define all the parameters.
 The Name cannot contain Spaces, points, or commas.
 Make sure to select the Coordinate System of the Current Map.
 Through this step, the New Feature layer will automatically appear in the table of contents.</p>
+<div class="figure align-default" id="id1">
+<img alt="../../../_images/5.2_new_features.gif" src="../../../_images/5.2_new_features.gif" />
+</div>
 </div>
 <div class="section" id="georeference-image-raster">
 <h4>Georeference image/raster<a class="headerlink" href="#georeference-image-raster" title="Permalink to this headline">¶</a></h4>
 <p>Import an image you want to georeference in the map in JPG or PNG format.
 Then go to Imagery &gt; Georeference &gt; Add control points.
 Click an exact point on the image and then click this point in the map before saving the changes.</p>
+<div class="figure align-default" id="figure-georeference">
+<img alt="../../../_images/6_figure_georeference.gif" src="../../../_images/6_figure_georeference.gif" />
+</div>
 </div>
 <div class="section" id="connecting-to-arcgis-servers">
 <h4>Connecting to ArcGIS Servers<a class="headerlink" href="#connecting-to-arcgis-servers" title="Permalink to this headline">¶</a></h4>
 <p>Insert &gt; Connections &gt; Add ArcGIS Server</p>
+<div class="figure align-default" id="server-connection">
+<img alt="../../../_images/7_server_connection.gif" src="../../../_images/7_server_connection.gif" />
+</div>
 <div class="section" id="svalbox-server">
 <h5>Svalbox server<a class="headerlink" href="#svalbox-server" title="Permalink to this headline">¶</a></h5>
 <div class="section" id="harvesting-metadata-360image-to-iframe">
@@ -612,6 +646,9 @@ Here, the most important is to copy the svalbox_i0wpurl link - this link can be 
 <ul class="simple">
 <li><p>Export map: Share &gt; Export Layout. Export Raster in -PNG and Vectors in -EPS. It is important to select <em>Clip to Graphics Extent</em>.</p></li>
 </ul>
+<div class="figure align-default" id="new-layout">
+<img alt="../../../_images/8_new_layout.gif" src="../../../_images/8_new_layout.gif" />
+</div>
 </div>
 </div>
 </div>
@@ -641,11 +678,11 @@ Here, the most important is to copy the svalbox_i0wpurl link - this link can be 
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../data_mining/data_mining.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../screen_recording/screen_recording.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Data mining and data integration</p>
+            <p class="prev-next-title">Screen recorder</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../about/seismic_lab.html" title="next page">
