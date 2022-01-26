@@ -244,46 +244,10 @@ NPD FactMap from the Norwegian coast with the active exploration wells.
 
 Science is not about starting from scratch, but about contributing new knowledge to existing ones. You thus need to know what is the state of the art, and efficiently use referencing. UNIS has a license for EndNote reference manager which we will be using in the course. It allows automatic importing of references, and including pdfs of the references, for easy archiving.
 
-````{note}
-To install EndNote at UNIS, connect to Software Center, search for EndNote and click install.
+```{figure} assets/8_1.png
+:name: 8_1
 
-```{admonition} Your computer
-:class: tip
-You can download it to your personal computer using the Svalbox student server, access to the following directory  \\svalbox\AG222-2022\AG222\Software\EndNote to download EndNote.
-
-```
-````
-
-
-
-```{figure} assets/7_endnote.gif
-:name: 7_endnote
-
-
-```
-
-```{figure} assets/7_2_scholar.gif
-:name: 7_2_scholar
-
-
-```
-
-```{figure} assets/7_3_word.gif
-:name: 7_3_word
-
-
-```
-
-```{figure} assets/7_4_reference.gif
-:name: 7_4_reference
-
-
-```
-
-```{figure} assets/7_5_style.gif
-:name: 7_5_style
-
-
+NPD FactMap from the Norwegian coast and Svalbard.
 ```
 
 ```{admonition} Task
@@ -303,51 +267,7 @@ You can download it to your personal computer using the Svalbox student server, 
 
 ### 8. SvalSIM – the svalbard Geosimulator
 
-```{note}
-Using the [Svalbox student server](../lessons/svalbox_server/svalbox_server "svalbox_server.md"), access to the following directory  \\svalbox\AG222-2022\AG222\Software\SVALSIM to download SVALSIM.
-```
-
-Copy the SvalSim folder from the Svalbox student server to your local PC C-drive, in the folder Program files.
-
-```{figure} assets/8_1_folder.png
-:name: 8_1_folder
-
-
-```
-
-To start the geosimulator, double click to the file SvalSim.bat
-
-```{figure} assets/8_2.png
-:name: 8_2
-
-
-```
-
-Click to **Continue** for the first to pages, and using the SvalSim as standard user click on **Enter**.
-
-The SvalSim opening page will start. You are now ready to travel and open up the information menu.
-
-Clicking the overview button, you get a map indicating your current position as a red dot.
-The white arrow in the menu shows you the view direction.
-In this way you know where you are in the 3D landscape.
-You can also read out:
-- X-coordinate
-- Y-coordinate
-- Elevation
-- Speed (when flying)
-
-```{figure} assets/8_3.png
-:name: 8_3
-
-
-```
-
-```{note}
-Almost all information in the geosimulator are geo-referenced, that means: by choosing a data object, either via the folder or via an icon, you can go to the right position (and direction).
-
-```
-
-
+Access D:\SvalSIM\ and also on Svalbox drive
 
 ```{admonition} Task
 :class: tip
