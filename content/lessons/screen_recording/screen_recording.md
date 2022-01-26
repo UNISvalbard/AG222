@@ -18,3 +18,20 @@ Use the following link to download it to your Computer: [https://www.cockos.com/
 Open Broadcaster Software is free and open source software for video recording and live streaming.
 
 Go to the following link to download it: [https://obsproject.com/](https://obsproject.com/)
+
+
+## DaVinci resolve
+
+Free movie editing software used in the big bizz.
+[https://www.blackmagicdesign.com/products/davinciresolve/](https://www.blackmagicdesign.com/products/davinciresolve/)
+
+
+## Blender
+
+Blender is a Free and Open Source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models among other capabilities.
+[https://www.blender.org/](https://www.blender.org/)
+
+```{admonition} Warning
+:class: warning
+We only recommend Blender for advanced users.
+```

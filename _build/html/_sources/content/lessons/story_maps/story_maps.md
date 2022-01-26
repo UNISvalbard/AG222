@@ -24,8 +24,10 @@ Use your UNIS account to sign in. To do so, select *Your ArcGIS organization's U
 
 After that, use your UNIS credentials.
 
-```{note}
+```{admonition} Warning
+:class: warning
 The username is studentnumber@student.unis.no.
+The password was defined by you when generating your UNIS ESRI account. Unless you used the same, the prestablished UNIS password will NOT work.
 
 ```
 
