@@ -9,6 +9,7 @@ parts:
 - caption: GIS
   chapters:
   - file: content/lessons/gis/gis.md
+  - file: content/lessons/story_maps/story_maps.md
 - caption: Resources
   chapters:
   - file: content/lessons/about/seismic_lab.md

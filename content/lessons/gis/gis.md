@@ -93,6 +93,12 @@ In Location, define the folder path where you want to save the project.
 This last step is important to have a good data structure because everything related to your project will be saved there.
 Also, select the tick that says *Create a new folder for this project*.
 
+```{figure} assets/1_create_project.gif
+:name: 1_create_project
+
+
+```
+
 ### Specify a coordinate system for your project
 
 The horizontal coordinate System for a global scene is limited to WGS1984.
@@ -102,6 +108,12 @@ In the Table of Contents right click on the layer or map you want to modify > Pr
 
 The coordinate System for Svalbard is: WGS1984 UTM Zone 33N.
 You can do a quick search by looking for the EPSG code 32633.
+
+```{figure} assets/2_coordinate_system.gif
+:name: 2_coordinate_system
+
+
+```
 
 `````{admonition} Georeferencing
 :class: suggestion
@@ -128,9 +140,21 @@ Coordinate System: Select a layer that has already the projection you want > Run
 Map > Add data > Go to the folder where you saved the data you want to import.
 Once you add it, it will appear as a new layer in the Table of Contents.
 
+```{figure} assets/3_add_data.gif
+:name: 3_add_data
+
+
+```
+
 #### Importing GPX tracks
 
 ArcGIS Pro uses a Georeferencing tool to import GPX tracks.
+
+```{figure} assets/4_import_gpx.gif
+:name: 4_import_gpx
+
+
+```
 
 #### Importing a digital terrain model
 
@@ -142,17 +166,29 @@ ArcGIS Pro uses a Georeferencing tool to import GPX tracks.
 
 #### Adding new features
 
-Option 1
-: Open Catalog > Right Click on the geodatabase file (.gdb) > New > Feature Class > Define a name and the type of feature you want to create.
+**Option 1**
+Open Catalog > Right Click on the geodatabase file (.gdb) > New > Feature Class > Define a name and the type of feature you want to create.
 Once it is created, drag the new .gdb to the Table of Contents.
 Select the new layer > Edit > Create > Define the feature you want to work with.
 
-Option 2
-: Geoprocessing Pane > Search for Create Feature Class.
+```{figure} assets/5.1_new_features.gif
+:name: 5.1_new_features
+
+
+```
+
+**Option 2**
+Geoprocessing Pane > Search for Create Feature Class.
 Define all the parameters.
 The Name cannot contain Spaces, points, or commas.
 Make sure to select the Coordinate System of the Current Map.
 Through this step, the New Feature layer will automatically appear in the table of contents.
+
+```{figure} assets/5.2_new_features.gif
+:name: 5.2_new_features
+
+
+```
 
 #### Georeference image/raster
 
@@ -160,9 +196,21 @@ Import an image you want to georeference in the map in JPG or PNG format.
 Then go to Imagery > Georeference > Add control points.
 Click an exact point on the image and then click this point in the map before saving the changes.
 
+```{figure} assets/6_figure_georeference.gif
+:name: 6_figure_georeference
+
+
+```
+
 #### Connecting to ArcGIS Servers
 
 Insert > Connections > Add ArcGIS Server
+
+```{figure} assets/7_server_connection.gif
+:name: 7_server_connection
+
+
+```
 
 ##### Svalbox server
 
@@ -190,3 +238,9 @@ Insert tab > New Layout > Generate the frame you want for your map.
 Map > Activate Map Frame to move and edit the map. Add Legend, North Arrow and Scale bar.
 
 - Export map: Share > Export Layout. Export Raster in -PNG and Vectors in -EPS. It is important to select *Clip to Graphics Extent*.
+
+```{figure} assets/8_new_layout.gif
+:name: 8_new_layout
+
+
+```
