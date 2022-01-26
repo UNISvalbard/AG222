@@ -15,11 +15,7 @@ When accessing these pages through the Windows File Explorer, one can copy the l
 ```
 
 
-You will then be prompted with the following login prompt, where you will have to supply the username and password provided to you in class:
-```{figure} assets/2_password.png
-:name: 2_password
-
-```
+You will then be prompted with the following login prompt, where you will have to supply the username and password provided to you in class.
 
 This should connect you to the server shares through a temporary connection - in case you'd prefer having a semi-permanent connection, you may proceed with the steps below to map the server as a network drive.
 
