@@ -59,6 +59,11 @@ Stratigraphic lexicon for Norwegian offshore areas, including some timescales an
 
 Norwegian Petroleum Directorate’s FactMaps on the Norwegian Continental Shelf. [http://www.npd.no/en/](http://www.npd.no/en/) (Advanced FactMaps)
 
+#### GeoSvalbard
+
+Developed by the Norwegian Polar Institute. There is a sample database and many cross sections among others.
+[https://geokart.npolar.no/geologi/GeoSvalbard/#9/77.9827/17.4068](https://geokart.npolar.no/geologi/GeoSvalbard/#9/77.9827/17.4068)
+
 #### Research in Svalbard database
 
 A searchable database of research projects in Svalbard. Run by Svalbard Science Forum/Norwegian Research Council. At: [https://researchinsvalbard.no/](https://researchinsvalbard.no/).
