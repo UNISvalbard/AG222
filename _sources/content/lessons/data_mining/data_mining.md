@@ -71,6 +71,10 @@ Literature search, focus particularly on the methods section of articles – wha
 
 Global resource for geosciences works on the web, desktop, and mobile, but unfortunately poor base maps from Svalbard. But can include layers streamed from Geodata.npolar.no directly in GE. [https://www.google.com/earth/versions/](https://www.google.com/earth/versions/) 
 
+#### FATMAP
+
+FATMAP is an Outdoor Adventure platform with high-resolution 3D map for both web and mobile. [https://fatmap.com/](https://fatmap.com/)
+
 
 
 
@@ -142,6 +146,16 @@ On SvalbardKartet [http://svalbardkartet.npolar.no/html5/index.html?viewer=svalb
 
 .3. Draw a line along the Permian-Triassic boundary and export your map as a geoTiff.
 ``` 
+
+````{admonition} Tip
+:class: note
+A tip for selecting the total area of a geological unit using [https://geokart.npolar.no/Html5Viewer/index.html?viewer=Svalbardkartet](https://geokart.npolar.no/Html5Viewer/index.html?viewer=Svalbardkartet) is:
+```{figure} assets/svalbadkartet_2.gif
+:name: svalbadkartet_2
+
+Showing how to select the outcropping areas of a geological unit in Svalbardkartet.
+```
+````
 
 
 ### 4. Oblique aerial imagery
