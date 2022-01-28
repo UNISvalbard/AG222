@@ -71,7 +71,7 @@ You can also reposition your content by moving your cursor over the left icon (w
 
 ### Embedding your geomodel
 
-Story Maps makes it easy to add your geomodel, just add an “Embed” on the button add.
+Story Maps makes it easy to include your geomodel, just click to “Embed”.
 
 ```{figure} assets/5_embed.png
 :name: 5_embed
