@@ -43,11 +43,3 @@ You can access to this information from the “pop-up”.
 
 Make a list of all formations that Kim passed during his trips and include the Groups and lithologies.
 ```
-
-
-
-```{figure} assets/1_create_project.gif
-:name: 1_create_project
-
-
-```
