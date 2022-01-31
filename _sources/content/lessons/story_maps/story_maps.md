@@ -5,8 +5,8 @@ StoryMaps is very intuitive.
 
 It is an ESRI product, highly linked with ArcGIS -see GIS 101 section for reference-, and therefore, it requires a license.
 
-```{admonition} Warning
-:class: warning
+```{admonition} Data source
+:class: note
 
 This page contains bits and pieces from all over the internet, supplemented by work by Peter Betlem, Tom Birchall, and Nil Rodes.
 ```

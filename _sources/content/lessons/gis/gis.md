@@ -175,6 +175,28 @@ Then browse to the folder where you have your DTM and select it.
 Once again, go to the Tools option in Analysis to open up the Geoprocessing toolbox.
 Set the imported DEM layer as the *Input Raster*, fill out targeted output and the measurements, and then click on *Run* to generate a slope.
 
+````{margin}
+```{admonition} Zenodo
+:class: tip
+
+Zenodo is a general-purpose open-access repository. It allows researchers to deposit research papers, data sets, research software...
+All the DTM in svalbox.no are uploaded there to assure free access to the data.
+```
+````
+
+````{admonition} Note
+:class: note
+You can download all the information related to the Digital Terrain Models uploaded in [Svalbox](http://www.svalbox.no/outcrops/) from the [Zenodo](https://zenodo.org/) database.
+
+The files needed to plot the models in ArcGIS Pro are in the *export.zip* folder.
+
+```{figure} assets/download_zenodo.gif
+:name: download_zenodo
+
+Click on the DOI link of the model. A new tab will open linking to the [Zenodo](https://zenodo.org/) database, from where you can download all the data.
+```
+````
+
 ##### Creating slopes, hillshades and contours
 
 - Hillshade: Imagery > Raster Functions > Surface > Hillshade > Choose the layer you want to do the hillshade from > Define the vertical exaggeration > Create New Layer.
