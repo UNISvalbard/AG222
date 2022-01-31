@@ -2,7 +2,7 @@
 
 
 Kim decided to go on three scooter trips throughout January, recording his whereabouts with his phone.
-The recorded gps tracks (so-called *gpx* files) have been uploaded to the Teams folder: 
+The recorded gps tracks (so-called *gpx* files) have been uploaded to the Teams folder: Documents > General > Modules > ArcGIS Pro
 
 ```{admonition} Task
 :class: tip
@@ -14,7 +14,7 @@ Plot these tracks in ArcGIS Pro and find out where he went (including the island
 
 ### Does Svalbox have digital datasets in the area visited by Kim?
 
-The Svalbox database lives both in a petrel project as well as on the web -see [www.svalbox.no/map](www.svalbox.no/map)-.
+The Svalbox database lives both in a petrel project as well as on the web -see [svalbox](www.svalbox.no/map) -.
 Let’s use the available map data to see whether Svalbox has acquired digital models and / or photos in the places visited by Kim.
 
 ```{admonition} Task
@@ -24,6 +24,20 @@ What is the outcrop model that Kim got closest too?
 
 `````
 
+````{margin}
+```{admonition} Zenodo
+:class: note
+
+Zenodo is a general-purpose open-access repository. It allows researchers to deposit research papers, data sets, research software...
+All the DTM in svalbox.no are uploaded there to assure free access to the data.
+```
+````
+
+```{admonition} Task
+:class: tip
+
+Download the digital terrain model of the outcrop from the [Zenodo.org](https://zenodo.org/) database and plot it in your GIS project.
+`````
 
 ### Which geological units did Kim cross?
 
