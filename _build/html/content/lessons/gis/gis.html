@@ -315,8 +315,8 @@
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#harvesting-metadata-360image-to-iframe">
-         Harvesting metadata: 360image to iframe
+        <a class="reference internal nav-link" href="#harvesting-metadata-the-360image-to-iframe-example">
+         Harvesting metadata: the 360image to iframe example
         </a>
        </li>
       </ul>
@@ -432,8 +432,8 @@
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#harvesting-metadata-360image-to-iframe">
-         Harvesting metadata: 360image to iframe
+        <a class="reference internal nav-link" href="#harvesting-metadata-the-360image-to-iframe-example">
+         Harvesting metadata: the 360image to iframe example
         </a>
        </li>
       </ul>
@@ -633,7 +633,7 @@ All the DTM in svalbox.no are uploaded there to assure free access to the data.<
 </div>
 </div>
 <div class="section" id="adding-new-features">
-<h4>Adding new features<a class="headerlink" href="#adding-new-features" title="Permalink to this headline">¶</a></h4>
+<span id="section-gis-new-features"></span><h4>Adding new features<a class="headerlink" href="#adding-new-features" title="Permalink to this headline">¶</a></h4>
 <p><strong>Option 1</strong>
 : Open Catalog &gt; Right Click on the geodatabase file (.gdb) &gt; New &gt; Feature Class &gt; Define a name and the type of feature you want to create.
 Once it is created, drag the new .gdb to the Table of Contents.
@@ -649,6 +649,19 @@ Make sure to select the Coordinate System of the Current Map.
 Through this step, the New Feature layer will automatically appear in the table of contents.</p>
 <div class="figure align-default" id="id1">
 <img alt="../../../_images/5.2_new_features.gif" src="../../../_images/5.2_new_features.gif" />
+</div>
+<p>After adding the Feature Class, you may add additional fields to it, important to capture descriptions, dates and more all within the same point.
+You can do so by right-clicking your newly created layer, and proceeding with the <em>Attribute Table</em>.
+A newly created layer usually comes in empty, with just the <em>OBJECTID</em> and <em>Shape</em> columns created.
+Before doing anything else, click the <em>Field: Add</em> button to open the column editor and add additional fields as is done in <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:gis:add_new_fields</span></code>.</p>
+<div class="figure align-default" id="fig-gis-add-new-fields">
+<img alt="../../../_images/add_new_fields.gif" src="../../../_images/add_new_fields.gif" />
+</div>
+<p>Once done, points can then be added and changed as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:gis:edit_attributes</span></code>.
+Here it is important to click both <em>Apply</em> in the <em>Attributes window</em> and click the <em>Save</em> button in the <em>Edit</em> panel after everything has been input.
+Otherwise you may risk losing all your newly added data points! :(</p>
+<div class="figure align-default" id="fig-gis-edit-attributes">
+<img alt="../../../_images/edit_attributes.gif" src="../../../_images/edit_attributes.gif" />
 </div>
 </div>
 </div>
@@ -671,19 +684,25 @@ Click an exact point on the image and then click this point in the map before sa
 <h4>NPI server<a class="headerlink" href="#npi-server" title="Permalink to this headline">¶</a></h4>
 <p>While Npolar provides a very useful service through <a class="reference external" href="https://toposvalbard.npolar.no/">toposvalbard</a> and <a class="reference external" href="https://geokart.npolar.no/Html5Viewer/index.html?viewer=Svalbardkartet">svalbardkartet</a>, these have limited abilities for interacting with the data.
 As such, it may be wise to import the toposvalbard data straight into ArcGIS by going to the Insert tab and click on the Connections icon.</p>
-<p>Then select <em>New ArcGIS Server</em>, and fill out the Server URL as below <a class="reference external" href="https://geodata.npolar.no/arcgis/rest/services/">https://geodata.npolar.no/arcgis/rest/services/</a>.
-Once connected, drag over the <strong>NP_Basiskart_Svalbard_WMTS_32633</strong> onto your map.</p>
+<p>Then select <em>New ArcGIS Server</em>, and fill out the Server URL as below:</p>
+<div class="highlight-url notranslate"><div class="highlight"><pre><span></span>https://geodata.npolar.no/arcgis/rest/services/](https://geodata.npolar.no/arcgis/rest/services/
+</pre></div>
+</div>
+<p>Once connected, drag over the <strong>NP_Basiskart_Svalbard_WMTS_32633</strong> onto your map.</p>
 </div>
 <div class="section" id="svalbox-server">
 <h4>Svalbox server<a class="headerlink" href="#svalbox-server" title="Permalink to this headline">¶</a></h4>
 <p>Although you could probably manually check the <span class="xref myst">svalbox</span> webpage and check which outcrops are closest, easier ways exist.
-Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the Connections icon. Then select New ArcGIS Server, and fill out the Server URL as below <a class="reference external" href="http://svalbox.unis.no/arcgis/rest/services/">http://svalbox.unis.no/arcgis/rest/services/</a>.
-Then you should be able to find the Svalbox data in the Catalog panel, and you can drag and drop different data sets straight into your map.</p>
+Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the Connections icon. Then select New ArcGIS Server, and fill out the Server URL as below:</p>
+<div class="highlight-url notranslate"><div class="highlight"><pre><span></span>http://svalbox.unis.no/arcgis/rest/services/](http://svalbox.unis.no/arcgis/rest/services/
+</pre></div>
+</div>
+<p>Then you should be able to find the Svalbox data in the Catalog panel, and you can drag and drop different data sets straight into your map.</p>
 <div class="figure align-default" id="server">
 <img alt="../../../_images/server.png" src="../../../_images/server.png" />
 </div>
-<div class="section" id="harvesting-metadata-360image-to-iframe">
-<h5>Harvesting metadata: 360image to iframe<a class="headerlink" href="#harvesting-metadata-360image-to-iframe" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="harvesting-metadata-the-360image-to-iframe-example">
+<span id="section-gis-360image-to-frame"></span><h5>Harvesting metadata: the 360image to iframe example<a class="headerlink" href="#harvesting-metadata-the-360image-to-iframe-example" title="Permalink to this headline">¶</a></h5>
 <p>Once the Svalbox ArcGIS server has been added to your project, drag and drop the images360 layer into your map.
 The location of 360 images should now be visible on your map.
 However, when clicking on them, you will not be shown the 360 image in the way it is served to you on <span class="xref myst">www.svalbox.no/map</span>.
