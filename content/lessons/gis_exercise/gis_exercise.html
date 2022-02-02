@@ -369,8 +369,14 @@ All the DTM in Svalbox.no are uploaded there to assure free access to the data.<
 <ol class="simple">
 <li><p>Add the Svalbox.no database as a server within the ArcGIS Pro project</p></li>
 <li><p>What is the outcrop model that Kim got closest too?</p></li>
-<li><p>Provide the following metadata for the model:</p></li>
+<li><p>Provide the following metadata for the model.</p></li>
+<li><p>Go to [www.doi.org]{https://www.doi.org} to resolve the data_doi you obtained from the Svalbox.no database layer.</p></li>
+<li><p>Download the digital terrain model of the outcrop from the Zenodo repository and plot it in your GIS project.</p></li>
+<li><p>Visualise the 3D model on SketchFab, using the url construction below:</p></li>
 </ol>
+<div class="highlight-url notranslate"><div class="highlight"><pre><span></span>https://sketchfab.com/3d-models/ + publ_sketchfab_id
+</pre></div>
+</div>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">northing of centroid</span><span class="p">:</span><span class="w"> </span><span class="c1"># in EPSG:32633</span><span class="w"></span>
 <span class="nt">easting of centroid</span><span class="p">:</span><span class="w"> </span><span class="c1"># in EPSG:32633</span><span class="w"></span>
 <span class="nt">locality</span><span class="p">:</span><span class="w"></span>
@@ -380,14 +386,6 @@ All the DTM in Svalbox.no are uploaded there to assure free access to the data.<
 <span class="nt">publ_data_doi</span><span class="p">:</span><span class="w"></span>
 <span class="nt">publ_date_archived</span><span class="p">:</span><span class="w"></span>
 <span class="nt">model_description</span><span class="p">:</span><span class="w"></span>
-</pre></div>
-</div>
-<ol class="simple">
-<li><p>Go to [www.doi.org]{https://www.doi.org} to resolve the data_doi you obtained from the Svalbox.no database layer.</p></li>
-<li><p>Download the digital terrain model of the outcrop from the Zenodo repository and plot it in your GIS project.</p></li>
-<li><p>Visualise the 3D model on SketchFab:</p></li>
-</ol>
-<div class="highlight-url notranslate"><div class="highlight"><pre><span></span>https://sketchfab.com/3d-models/ + publ_sketchfab_id
 </pre></div>
 </div>
 </div>
@@ -428,17 +426,15 @@ One such view is available in Tempelfjorden.</p>
 <div class="tip admonition">
 <p class="admonition-title">Task</p>
 <ol class="simple">
-<li><p>Find the 360 degree image in Tempelfjorden and find the following:</p></li>
+<li><p>Find the 360 degree image in Tempelfjorden and find the following metadata.</p></li>
+<li><p>Visualise the 360 degree image using the tools provided in <a class="reference internal" href="../gis/gis.html#section-gis-360image-to-frame"><span class="std std-ref">Harvesting metadata: the 360image to iframe example</span></a>.</p></li>
+<li><p>Which <em>Formations</em> are you looking at on the northern shore? Which on the southern?</p></li>
 </ol>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image_identifier</span><span class="p">:</span><span class="w"></span>
 <span class="nt">image_acquisition_date</span><span class="p">:</span><span class="w"></span>
 <span class="nt">svalbox_i0wpurl</span><span class="p">:</span><span class="w"></span>
 </pre></div>
 </div>
-<ol class="simple">
-<li><p>Visualise the 360 degree image using the tools provided in <a class="reference internal" href="../gis/gis.html#section-gis-360image-to-frame"><span class="std std-ref">Harvesting metadata: 360image to iframe</span></a>.</p></li>
-<li><p>Which <em>Formations</em> are you looking at on the northern shore? Which on the southern?</p></li>
-</ol>
 </div>
 </div>
 <div class="section" id="your-own-points-of-interest">
@@ -449,18 +445,16 @@ One such view is available in Tempelfjorden.</p>
 <p class="admonition-title">Task</p>
 <ol class="simple">
 <li><p>Pick three locations and create new Point for them.</p></li>
-<li><p>Provide each Point with the following:</p></li>
+<li><p>Provide each Point with the following metadata:</p></li>
+<li><p>Export the layer as a shapefile, and upload it to the Teams Folder</p></li>
 </ol>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Name</span><span class="w"> </span><span class="c1"># a unique name to distinguish it</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">Elevation</span><span class="w"> </span><span class="c1"># how high it is</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">Date</span><span class="w"> </span><span class="c1"># i.e., when you would like to go there</span><span class="w"></span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="c1"># a unique name to distinguish it</span><span class="w"></span>
+<span class="nt">Elevation</span><span class="p">:</span><span class="w"> </span><span class="c1"># how high it is</span><span class="w"></span>
+<span class="nt">Date</span><span class="p">:</span><span class="w"> </span><span class="c1"># i.e., when you would like to go there</span><span class="w"></span>
 <span class="nt">Description</span><span class="p">:</span><span class="w"> </span><span class="c1"># i.e., why you would like to go there.</span><span class="w"></span>
 <span class="nt">Owner</span><span class="p">:</span><span class="w"> </span><span class="c1"># i.e., who it is that would like to go there.</span><span class="w"></span>
 </pre></div>
 </div>
-<ol class="simple">
-<li><p>Export the layer as a shapefile, and upload it to the Teams Folder</p></li>
-</ol>
 </div>
 </div>
 </div>
