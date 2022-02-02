@@ -231,7 +231,7 @@ Through this step, the New Feature layer will automatically appear in the table 
 After adding the Feature Class, you may add additional fields to it, important to capture descriptions, dates and more all within the same point.
 You can do so by right-clicking your newly created layer, and proceeding with the *Attribute Table*.
 A newly created layer usually comes in empty, with just the *OBJECTID* and *Shape* columns created.
-Before doing anything else, click the *Field: Add* button to open the column editor and add additional fields as is done in [](fig:gis:add_new_fields).
+Before doing anything else, click the *Field: Add* button to open the column editor and add additional fields as is done in {numref}`fig:gis:add_new_fields`.
 
 ```{figure} assets/add_new_fields.gif
 :name: fig:gis:add_new_fields
@@ -239,12 +239,12 @@ Before doing anything else, click the *Field: Add* button to open the column edi
 
 ```
 
-Once done, points can then be added and changed as shown in [](fig:gis:edit_attributes).
+Once done, points can then be added and changed as shown in {numref}`fig:gis:edit_attributes`.
 Here it is important to click both *Apply* in the *Attributes window* and click the *Save* button in the *Edit* panel after everything has been input.
 Otherwise you may risk losing all your newly added data points! :(
 
-```{figure} assets/add_new_fields.gif
-:name: fig:gis:add_new_fields
+```{figure} assets/edit_attributes.gif
+:name: fig:gis:edit_attributes
 
 
 ```
@@ -301,7 +301,7 @@ Then you should be able to find the Svalbox data in the Catalog panel, and you c
 ```
 
 (section:gis:360image-to-frame)=
-##### Harvesting metadata: 360image to iframe
+##### Harvesting metadata: the 360image to iframe example
 
 Once the Svalbox ArcGIS server has been added to your project, drag and drop the images360 layer into your map.
 The location of 360 images should now be visible on your map.
