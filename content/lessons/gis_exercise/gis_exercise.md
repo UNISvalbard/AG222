@@ -67,7 +67,14 @@ All the DTM in Svalbox.no are uploaded there to assure free access to the data.
 
 1. Add the Svalbox.no database as a server within the ArcGIS Pro project
 2. What is the outcrop model that Kim got closest too?
-3. Provide the following metadata for the model:
+3. Provide the following metadata for the model.
+4. Go to [www.doi.org]{https://www.doi.org} to resolve the data_doi you obtained from the Svalbox.no database layer.
+5. Download the digital terrain model of the outcrop from the Zenodo repository and plot it in your GIS project.
+6. Visualise the 3D model on SketchFab, using the url construction below:
+
+```url
+https://sketchfab.com/3d-models/ + publ_sketchfab_id
+```
 
 ```yaml
 northing of centroid: # in EPSG:32633
@@ -81,13 +88,7 @@ publ_date_archived:
 model_description:
 ```
 
-4. Go to [www.doi.org]{https://www.doi.org} to resolve the data_doi you obtained from the Svalbox.no database layer.
-5. Download the digital terrain model of the outcrop from the Zenodo repository and plot it in your GIS project.
-6. Visualise the 3D model on SketchFab:
 
-```url
-https://sketchfab.com/3d-models/ + publ_sketchfab_id
-```
 ````
 
 ### Which geological units did Kim cross?
@@ -125,7 +126,9 @@ Make sure to include the images_360 layer from the Svalbox server in your projec
 ````{admonition} Task
 :class: tip
 
-1. Find the 360 degree image in Tempelfjorden and find the following:
+1. Find the 360 degree image in Tempelfjorden and find the following metadata.
+2. Visualise the 360 degree image using the tools provided in [](section:gis:360image-to-frame).
+3. Which *Formations* are you looking at on the northern shore? Which on the southern?
 
 ```yaml
 image_identifier:
@@ -133,8 +136,6 @@ image_acquisition_date:
 svalbox_i0wpurl:
 ```
 
-2. Visualise the 360 degree image using the tools provided in [](section:gis:360image-to-frame).
-3. Which *Formations* are you looking at on the northern shore? Which on the southern?
 ````
 
 ### Your own points of interest
@@ -146,15 +147,15 @@ Although there is already a lot of information available, it is perhaps equally 
 :class: tip
 
 1. Pick three locations and create new Point for them.
-2. Provide each Point with the following:
+2. Provide each Point with the following metadata:
+3. Export the layer as a shapefile, and upload it to the Teams Folder
 
 ```yaml
-Name # a unique name to distinguish it
-Elevation # how high it is
-Date # i.e., when you would like to go there
+Name: # a unique name to distinguish it
+Elevation: # how high it is
+Date: # i.e., when you would like to go there
 Description: # i.e., why you would like to go there.
 Owner: # i.e., who it is that would like to go there.
 ```
 
-3. Export the layer as a shapefile, and upload it to the Teams Folder
 ````
