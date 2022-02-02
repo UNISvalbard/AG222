@@ -18,10 +18,13 @@ Also make sure to end the key with a *:*.
 ````
 
 ````{margin}
-```{note}
+```{admonition} Accessing layer information
+:class: note
 You can access layer information by clicking on the map, as this action presents you with the layer-specific information in the form of a “pop-up”.
 Try this by clicking on one of the points of the imported GPS track.
-Similarly, do so again later after finding the closest outcrop.
+
+Alternatively, you can access information by right-clicking the layer in the contents window, and then selecting the *Attribute Table* option.
+This shows you all information that is available in table-form; it even allows you to sort the columns!
 ```
 ````
 
@@ -43,7 +46,6 @@ time started: # name locality and coordinates in EPSG:32633
 time stopped: # name locality and coordinates in EPSG:32633
 ```
 ````
-
 
 ### Does Svalbox have digital datasets in the area visited by Kim?
 
@@ -106,4 +108,53 @@ Make sure you have the NPI server available within your ArcGIS Pro project, as t
 
 1. Make a list of all *Formations* that Kim passed during his trips
 2. Complete the list by adding *Groups* and *Lithologies*
+````
+
+### Bird's view
+
+Kim is not the only one who likes to cruise around Svalbard.
+Luckily, we have some artificial birds contributing to the Svalbox.no project by providing some spectacular 360 degree imagery.
+One such view is available in Tempelfjorden.
+
+````{margin}
+```{note}
+Make sure to include the images_360 layer from the Svalbox server in your project.
+```
+````
+
+````{admonition} Task
+:class: tip
+
+1. Find the 360 degree image in Tempelfjorden and find the following:
+
+```yaml
+image_identifier:
+image_acquisition_date:
+svalbox_i0wpurl:
+```
+
+2. Visualise the 360 degree image using the tools provided in [](section:gis:360image-to-frame).
+3. Which *Formations* are you looking at on the northern shore? Which on the southern?
+````
+
+### Your own points of interest
+
+Although there is already a lot of information available, it is perhaps equally important to be able to add your own data to the project.
+[](section:gis:new_features) provides an overview with how to create a new *Point* layer.
+
+````{admonition} Task
+:class: tip
+
+1. Pick three locations and create new Point for them.
+2. Provide each Point with the following:
+
+```yaml
+Name # a unique name to distinguish it
+Elevation # how high it is
+Date # i.e., when you would like to go there
+Description: # i.e., why you would like to go there.
+Owner: # i.e., who it is that would like to go there.
+```
+
+3. Export the layer as a shapefile, and upload it to the Teams Folder
 ````
