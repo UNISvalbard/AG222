@@ -68,7 +68,7 @@ All the DTM in Svalbox.no are uploaded there to assure free access to the data.
 1. Add the Svalbox.no database as a server within the ArcGIS Pro project
 2. What is the outcrop model that Kim got closest too?
 3. Provide the following metadata for the model.
-4. Go to [www.doi.org]{https://www.doi.org} to resolve the data_doi you obtained from the Svalbox.no database layer.
+4. Go to [www.doi.org](https://www.doi.org) to resolve the data_doi you obtained from the Svalbox.no database layer.
 5. Download the digital terrain model of the outcrop from the Zenodo repository and plot it in your GIS project.
 6. Visualise the 3D model on SketchFab, using the url construction below:
 

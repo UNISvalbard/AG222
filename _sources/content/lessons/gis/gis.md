@@ -278,7 +278,7 @@ As such, it may be wise to import the toposvalbard data straight into ArcGIS by 
 Then select *New ArcGIS Server*, and fill out the Server URL as below:
 
 ```url
-https://geodata.npolar.no/arcgis/rest/services/](https://geodata.npolar.no/arcgis/rest/services/
+https://geodata.npolar.no/arcgis/rest/services/
 ```
 
 Once connected, drag over the **NP_Basiskart_Svalbard_WMTS_32633** onto your map.
@@ -289,7 +289,7 @@ Although you could probably manually check the [svalbox](www.svalbox.no/map) web
 Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the Connections icon. Then select New ArcGIS Server, and fill out the Server URL as below:
 
 ```url
-http://svalbox.unis.no/arcgis/rest/services/](http://svalbox.unis.no/arcgis/rest/services/
+http://svalbox.unis.no/arcgis/rest/services/
 ```
 
 Then you should be able to find the Svalbox data in the Catalog panel, and you can drag and drop different data sets straight into your map.
