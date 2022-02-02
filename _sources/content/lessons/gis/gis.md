@@ -203,6 +203,7 @@ Click on the DOI link of the model. A new tab will open linking to the [Zenodo](
 - Contour: Imagery > Raster Functions > Surface > Contour > Choose the layer you want to do the contours from > Define the contour separation > Create New Layer.
 - You can do this with lots of other tools: Aspect, Slope, Shaded relief, Curvature, etc.
 
+(section:gis:new_features)=
 #### Adding new features
 
 **Option 1**
@@ -225,6 +226,25 @@ Through this step, the New Feature layer will automatically appear in the table 
 
 ```{figure} assets/5.2_new_features.gif
 :name: 5.2_new_features
+```
+
+After adding the Feature Class, you may add additional fields to it, important to capture descriptions, dates and more all within the same point.
+You can do so by right-clicking your newly created layer, and proceeding with the *Attribute Table*.
+A newly created layer usually comes in empty, with just the *OBJECTID* and *Shape* columns created.
+Before doing anything else, click the *Field: Add* button to open the column editor and add additional fields as is done in [](fig:gis:add_new_fields).
+
+```{figure} assets/add_new_fields.gif
+:name: fig:gis:add_new_fields
+
+
+```
+
+Once done, points can then be added and changed as shown in [](fig:gis:edit_attributes).
+Here it is important to click both *Apply* in the *Attributes window* and click the *Save* button in the *Edit* panel after everything has been input.
+Otherwise you may risk losing all your newly added data points! :(
+
+```{figure} assets/add_new_fields.gif
+:name: fig:gis:add_new_fields
 
 
 ```
@@ -253,15 +273,25 @@ Insert > Connections > Add ArcGIS Server
 #### NPI server
 
 While Npolar provides a very useful service through [toposvalbard](https://toposvalbard.npolar.no/) and [svalbardkartet](https://geokart.npolar.no/Html5Viewer/index.html?viewer=Svalbardkartet), these have limited abilities for interacting with the data.
-As such, it may be wise to import the toposvalbard data straight into ArcGIS by going to the Insert tab and click on the Connections icon. 
+As such, it may be wise to import the toposvalbard data straight into ArcGIS by going to the Insert tab and click on the Connections icon.
 
-Then select *New ArcGIS Server*, and fill out the Server URL as below [https://geodata.npolar.no/arcgis/rest/services/](https://geodata.npolar.no/arcgis/rest/services/).
-Once connected, drag over the **NP_Basiskart_Svalbard_WMTS_32633** onto your map. 
+Then select *New ArcGIS Server*, and fill out the Server URL as below:
+
+```url
+https://geodata.npolar.no/arcgis/rest/services/](https://geodata.npolar.no/arcgis/rest/services/
+```
+
+Once connected, drag over the **NP_Basiskart_Svalbard_WMTS_32633** onto your map.
 
 #### Svalbox server
 
 Although you could probably manually check the [svalbox](www.svalbox.no/map) webpage and check which outcrops are closest, easier ways exist.
-Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the Connections icon. Then select New ArcGIS Server, and fill out the Server URL as below [http://svalbox.unis.no/arcgis/rest/services/](http://svalbox.unis.no/arcgis/rest/services/).
+Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the Connections icon. Then select New ArcGIS Server, and fill out the Server URL as below:
+
+```url
+http://svalbox.unis.no/arcgis/rest/services/](http://svalbox.unis.no/arcgis/rest/services/
+```
+
 Then you should be able to find the Svalbox data in the Catalog panel, and you can drag and drop different data sets straight into your map.
 
 ```{figure} assets/server.png
@@ -270,6 +300,7 @@ Then you should be able to find the Svalbox data in the Catalog panel, and you c
 
 ```
 
+(section:gis:360image-to-frame)=
 ##### Harvesting metadata: 360image to iframe
 
 Once the Svalbox ArcGIS server has been added to your project, drag and drop the images360 layer into your map.
