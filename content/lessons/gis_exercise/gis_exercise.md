@@ -1,3 +1,25 @@
+````{admonition} Assignment due date and formatting
+:class: warning
+
+Throughout this page you will find several Task blocks with metadata requests.
+It is important to copy these into a text document (Word or otherwise), provide them with a header (e.g., *Task 1* for first task, etc.), and hand them in no later than 17:59 on the 11th of February 202.
+Do so by uploading the compiled file to your personal Teams folder.
+
+The filename should be formatted as:
+
+```
+Exercise-2_GIS_{first-name}-{surname}.{extension}
+```
+
+Herein the curly brackets and text between them are variables, in this case first and surnames.
+As an example, using Kim Senger and saving the file as a Word file, the filename becomes:
+
+```
+Exercise-2_GIS_Kim-Senger.docx
+```
+
+````
+
 # Exercise - where did he go?
 
 Most phones and tablets have built-in GPS nowadays, allowing you to track your movements and trips.
