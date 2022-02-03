@@ -50,7 +50,11 @@ This shows you all information that is available in table-form; it even allows y
 ```
 ````
 
-The recorded GPS tracks (so-called *.gpx* files) have been uploaded to the AG222-2022 Microsoft Teams folder: Documents > General > Modules > ArcGIS Pro
+The recorded GPS tracks (so-called *.gpx* files) have been uploaded to:
+
+```
+AG222-2022 Microsoft Teams folder/Documents/General/Modules/ArcGIS Pro/Exercise Data/GPS Tracks
+```
 
 ````{admonition} Task 1
 :class: tip
