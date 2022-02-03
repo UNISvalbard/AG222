@@ -1,3 +1,25 @@
+````{admonition} Assignment due date and formatting
+:class: warning
+
+Throughout this page you will find several Task blocks with metadata requests.
+It is important to copy these into a text document (Word or otherwise), provide them with a header (e.g., *Task 1* for first task, etc.), and hand them in no later than 17:59 on the 11th of February 202.
+Do so by uploading the compiled file to your personal Teams folder.
+
+The filename should be formatted as:
+
+```
+Exercise-2_GIS_{first-name}-{surname}.{extension}
+```
+
+Herein the curly brackets and text between them are variables, in this case first and surnames.
+As an example, using Kim Senger and saving the file as a Word file, the filename becomes:
+
+```
+Exercise-2_GIS_Kim-Senger.docx
+```
+
+````
+
 # Exercise - where did he go?
 
 Most phones and tablets have built-in GPS nowadays, allowing you to track your movements and trips.
@@ -28,7 +50,11 @@ This shows you all information that is available in table-form; it even allows y
 ```
 ````
 
-The recorded GPS tracks (so-called *.gpx* files) have been uploaded to the AG222-2022 Microsoft Teams folder: Documents > General > Modules > ArcGIS Pro
+The recorded GPS tracks (so-called *.gpx* files) have been uploaded to:
+
+```
+AG222-2022 Microsoft Teams folder/Documents/General/Modules/ArcGIS Pro/Exercise Data/GPS Tracks
+```
 
 ````{admonition} Task 1
 :class: tip
@@ -68,7 +94,7 @@ All the DTM in Svalbox.no are uploaded there to assure free access to the data.
 1. Add the Svalbox.no database as a server within the ArcGIS Pro project
 2. What is the outcrop model that Kim got closest too?
 3. Provide the following metadata for the model.
-4. Go to [www.doi.org]{https://www.doi.org} to resolve the data_doi you obtained from the Svalbox.no database layer.
+4. Go to [www.doi.org](https://www.doi.org) to resolve the data_doi you obtained from the Svalbox.no database layer.
 5. Download the digital terrain model of the outcrop from the Zenodo repository and plot it in your GIS project.
 6. Visualise the 3D model on SketchFab, using the url construction below:
 
