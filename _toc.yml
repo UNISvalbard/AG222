@@ -14,8 +14,21 @@ parts:
     - file: content/lessons/gis_exercise/gis_exercise.md
   - file: content/lessons/story_maps/story_maps.md
 
+- caption: Structure-from-motion
+  chapters:
+  - url: https://unisvalbard.github.io/Geo-SfM/landing-page.html
+    sections:
+    - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l1/sfm_photogrammetry.html
+      title: SfM photogrammetry
+    - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l2/overview.html
+      title: Georeferencing
+    - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l3/overview.html
+      title: Automation
+    - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l4/hss_overview.html
+      title: Digitizing objects
+    - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l5/geomodel_tutorial.html
+      title: Geomodeling
+
 - caption: Resources
   chapters:
   - file: content/lessons/about/seismic_lab.md
-
-
