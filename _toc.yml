@@ -17,6 +17,7 @@ parts:
 - caption: Structure-from-motion
   chapters:
   - url: https://unisvalbard.github.io/Geo-SfM/landing-page.html
+    title: Geo-SfM module
     external: True
     sections:
     - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l1/sfm_photogrammetry.html
