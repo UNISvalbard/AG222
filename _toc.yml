@@ -20,6 +20,7 @@ parts:
     sections:
     - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l1/sfm_photogrammetry.html
       title: SfM photogrammetry
+      external: True
     - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l2/overview.html
       title: Georeferencing
     - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l3/overview.html
