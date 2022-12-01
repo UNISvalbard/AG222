@@ -278,13 +278,13 @@ Access D:\SvalSIM\ and also on Svalbox drive
 3. Consider using SvalSIM to “film” your journey from Longyearbyen to your field area.
 ```
 
-```{figure} assets/9_1_geo_svalbard.png
+```{figure} ../data_mining/assets/9_1_geo_svalbard.png
 :name: 9_1_geo_svalbard
 
 
 ```
 
-```{figure} assets/9_2_geo_svalbard.png
+```{figure} ../data_mining/assets/9_2_geo_svalbard.png
 :name: 9_2_geo_svalbard
 
 

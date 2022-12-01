@@ -28,3 +28,5 @@ sphinx:
   config:
     #bibtex_reference_style: author_year
     bibtex_default_style: plain
+
+only_build_toc_files: true
