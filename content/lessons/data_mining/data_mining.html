@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Data mining and data integration &#8212; AG 222 Compendium</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,36 +20,35 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/togglebutton.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -60,7 +61,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Found this tutorial helpful? Please participate in the survey!</div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -69,9 +84,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -142,6 +158,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Structure-from-motion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://unisvalbard.github.io/Geo-SfM/landing-page.html">
+   Geo-SfM module
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Resources
  </span>
 </p>
@@ -154,90 +182,176 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/content/lessons/data_mining/data_mining.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/UNISvalbard/AG222"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/UNISvalbard/AG222/issues/new?title=Issue%20on%20page%20%2Fcontent/lessons/data_mining/data_mining.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/UNISvalbard/AG222/issues/new?title=Issue%20on%20page%20%2Fcontent/lessons/data_mining/data_mining.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/UNISvalbard/AG222/edit/master/content/lessons/data_mining/data_mining.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/content/lessons/data_mining/data_mining.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#software">
    Software
@@ -378,12 +492,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Data mining and data integration</h1>
@@ -540,11 +653,12 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="data-mining-and-data-integration">
-<h1>Data mining and data integration<a class="headerlink" href="#data-mining-and-data-integration" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="data-mining-and-data-integration">
+<h1>Data mining and data integration<a class="headerlink" href="#data-mining-and-data-integration" title="Permalink to this headline">#</a></h1>
 <p>This module covers the basic online resources to find the information you need to conduct research in Svalbard.</p>
 <p><strong>Main learning objectives</strong></p>
 <p>This course is split in several modules, consisting of interactive lectures walkthroughs, and exercises.
@@ -561,100 +675,106 @@ The main learning objectives are:</p>
 <li><p>Course material is provided on the AG222 Teams folder – use your UNIS credentials to log in.</p></li>
 <li><p>We have set up a course data server, accessed from the UNIS network (also via VPN), under  \svalbox\AG222 (again, use your UNIS credentials to log in).</p></li>
 </ul>
-<div class="section" id="software">
-<h2>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="petrel">
-<h3>Petrel<a class="headerlink" href="#petrel" title="Permalink to this headline">¶</a></h3>
+<section id="software">
+<h2>Software<a class="headerlink" href="#software" title="Permalink to this headline">#</a></h2>
+<section id="petrel">
+<h3>Petrel<a class="headerlink" href="#petrel" title="Permalink to this headline">#</a></h3>
 <p>A industry-standard subsurface software with a very steep learning tool. We will be using Petrel in the Geomodelling part as part of the Billefjorden Trough work after Easter.</p>
-</div>
-<div class="section" id="svalsim">
-<h3>SvalSIM<a class="headerlink" href="#svalsim" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="svalsim">
+<h3>SvalSIM<a class="headerlink" href="#svalsim" title="Permalink to this headline">#</a></h3>
 <p>A GeoSimulator last updated in 2009 developed by Equinor as part of their inter-disciplinary Svalex student expeditions ran around Svalbard. Available for Windows on the D: drive of UNIS PCs, it can also be used on your laptops during the course.</p>
-</div>
-<div class="section" id="relevant-online-resources">
-<h3>Relevant online resources:<a class="headerlink" href="#relevant-online-resources" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="svalbox">
-<h4>Svalbox<a class="headerlink" href="#svalbox" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="relevant-online-resources">
+<h3>Relevant online resources:<a class="headerlink" href="#relevant-online-resources" title="Permalink to this headline">#</a></h3>
+<section id="svalbox">
+<h4>Svalbox<a class="headerlink" href="#svalbox" title="Permalink to this headline">#</a></h4>
 <p>UNIS-developed geoscience integration portal, including digital outcrop models. See <a class="reference external" href="https://www.svalbox.no/">https://www.svalbox.no/</a>.</p>
-</div>
-<div class="section" id="toposvalbard">
-<h4>TopoSvalbard<a class="headerlink" href="#toposvalbard" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="toposvalbard">
+<h4>TopoSvalbard<a class="headerlink" href="#toposvalbard" title="Permalink to this headline">#</a></h4>
 <p>A topographic map of Svalbard also includes aerial images, terrain models, old oblique aerial photography. See <a class="reference external" href="http://Toposvalbard.npolar.no">http://Toposvalbard.npolar.no</a></p>
-</div>
-<div class="section" id="svalbardkartet">
-<h4>Svalbardkartet<a class="headerlink" href="#svalbardkartet" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="svalbardkartet">
+<h4>Svalbardkartet<a class="headerlink" href="#svalbardkartet" title="Permalink to this headline">#</a></h4>
 <p>It includes a geological map at 1:250 000 and 1:750 000 scale, and other relevant data sets. See <a class="reference external" href="http://svalbardkartet.npolar.no/html5/Index.html">http://svalbardkartet.npolar.no/html5/Index.html</a> (turn on Geology).</p>
-</div>
-<div class="section" id="norwegian-polar-institute-geodata-portal">
-<h4>Norwegian Polar Institute Geodata portal<a class="headerlink" href="#norwegian-polar-institute-geodata-portal" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="norwegian-polar-institute-geodata-portal">
+<h4>Norwegian Polar Institute Geodata portal<a class="headerlink" href="#norwegian-polar-institute-geodata-portal" title="Permalink to this headline">#</a></h4>
 <p>Access to many of the maps and data in TopoSvalbard and Svalbardkartet, <a class="reference external" href="http://geodata.npolar.no">http://geodata.npolar.no</a>.</p>
-</div>
-<div class="section" id="stratigraphic-lexicon-of-svalbard">
-<h4>Stratigraphic lexicon of Svalbard<a class="headerlink" href="#stratigraphic-lexicon-of-svalbard" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="stratigraphic-lexicon-of-svalbard">
+<h4>Stratigraphic lexicon of Svalbard<a class="headerlink" href="#stratigraphic-lexicon-of-svalbard" title="Permalink to this headline">#</a></h4>
 <p>An overview of most of the formations you will work on. Paper copy in UNIS library (Dallmann 1999), online version available at <a class="reference external" href="http://nhm2.uio.no/norges/litho/svalbard/index.htm">http://nhm2.uio.no/norges/litho/svalbard/index.htm</a>.</p>
-</div>
-<div class="section" id="stratigraphic-lexicon">
-<h4>Stratigraphic lexicon<a class="headerlink" href="#stratigraphic-lexicon" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="stratigraphic-lexicon">
+<h4>Stratigraphic lexicon<a class="headerlink" href="#stratigraphic-lexicon" title="Permalink to this headline">#</a></h4>
 <p>Stratigraphic lexicon for Norwegian offshore areas, including some timescales and templates.
 <a class="reference external" href="http://nhm2.uio.no/norges/litho.html">http://nhm2.uio.no/norges/litho.html</a></p>
-</div>
-<div class="section" id="norwegian-petroleum-directorates-factmaps">
-<h4>Norwegian Petroleum Directorate’s FactMaps<a class="headerlink" href="#norwegian-petroleum-directorates-factmaps" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="norwegian-petroleum-directorates-factmaps">
+<h4>Norwegian Petroleum Directorate’s FactMaps<a class="headerlink" href="#norwegian-petroleum-directorates-factmaps" title="Permalink to this headline">#</a></h4>
 <p>Norwegian Petroleum Directorate’s FactMaps on the Norwegian Continental Shelf. <a class="reference external" href="http://www.npd.no/en/">http://www.npd.no/en/</a> (Advanced FactMaps)</p>
-</div>
-<div class="section" id="geosvalbard">
-<h4>GeoSvalbard<a class="headerlink" href="#geosvalbard" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="geosvalbard">
+<h4>GeoSvalbard<a class="headerlink" href="#geosvalbard" title="Permalink to this headline">#</a></h4>
 <p>Developed by the Norwegian Polar Institute. There is a sample database and many cross sections among others.
 <a class="reference external" href="https://geokart.npolar.no/geologi/GeoSvalbard/#9/77.9827/17.4068">https://geokart.npolar.no/geologi/GeoSvalbard/#9/77.9827/17.4068</a></p>
-</div>
-<div class="section" id="research-in-svalbard-database">
-<h4>Research in Svalbard database<a class="headerlink" href="#research-in-svalbard-database" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="research-in-svalbard-database">
+<h4>Research in Svalbard database<a class="headerlink" href="#research-in-svalbard-database" title="Permalink to this headline">#</a></h4>
 <p>A searchable database of research projects in Svalbard. Run by Svalbard Science Forum/Norwegian Research Council. At: <a class="reference external" href="https://researchinsvalbard.no/">https://researchinsvalbard.no/</a>.</p>
-</div>
-<div class="section" id="google-scholar">
-<h4>Google Scholar<a class="headerlink" href="#google-scholar" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="google-scholar">
+<h4>Google Scholar<a class="headerlink" href="#google-scholar" title="Permalink to this headline">#</a></h4>
 <p>Literature search, focus particularly on the methods section of articles – what do geologists do, and what methods do they use? Use the direct import function for EndNote to save time! <a class="reference external" href="http://Scholar.google.com">http://Scholar.google.com</a></p>
-</div>
-<div class="section" id="google-earth">
-<h4>Google Earth<a class="headerlink" href="#google-earth" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="google-earth">
+<h4>Google Earth<a class="headerlink" href="#google-earth" title="Permalink to this headline">#</a></h4>
 <p>Global resource for geosciences works on the web, desktop, and mobile, but unfortunately poor base maps from Svalbard. But can include layers streamed from Geodata.npolar.no directly in GE. <a class="reference external" href="https://www.google.com/earth/versions/">https://www.google.com/earth/versions/</a></p>
-</div>
-<div class="section" id="fatmap">
-<h4>FATMAP<a class="headerlink" href="#fatmap" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="fatmap">
+<h4>FATMAP<a class="headerlink" href="#fatmap" title="Permalink to this headline">#</a></h4>
 <p>FATMAP is an Outdoor Adventure platform with high-resolution 3D map for both web and mobile. <a class="reference external" href="https://fatmap.com/">https://fatmap.com/</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">#</a></h2>
 <p>Follow the tasks below at your own pace. Make screenshots of your results to document your answers/progress. We will, at regular intervals, pause and get a student to present (by sharing their screen and clicking the right buttons) how the task was achieved and what the results are.</p>
-<div class="figure align-default" id="student-deliveries">
+<figure class="align-default" id="student-deliveries">
 <img alt="../../../_images/1_student_deliveries.png" src="../../../_images/1_student_deliveries.png" />
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Deliver the exercise in the MS Teams folder.</span><a class="headerlink" href="#student-deliveries" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Deliver the exercise in the MS Teams folder.</span><a class="headerlink" href="#student-deliveries" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>These are individual exercises. However, you can work in pairs if you prefer, but each of you should deliver the exercises individually.</p>
 </div>
-<div class="section" id="virtual-field-trip-preparation">
-<h3>1. Virtual field trip preparation<a class="headerlink" href="#virtual-field-trip-preparation" title="Permalink to this headline">¶</a></h3>
+<section id="virtual-field-trip-preparation">
+<h3>1. Virtual field trip preparation<a class="headerlink" href="#virtual-field-trip-preparation" title="Permalink to this headline">#</a></h3>
 <p>Prepare 1 slide on the area you will be working on for your virtual field trip.</p>
 <div class="tip admonition">
 <p class="admonition-title">Task</p>
 <p>Where is it, how would you get there (in summer and in winter/spring) and what geological units are exposed there?</p>
 </div>
-<div class="figure align-default" id="student-groups-2022">
+<figure class="align-default" id="student-groups-2022">
 <img alt="../../../_images/2_student_groups_2022.png" src="../../../_images/2_student_groups_2022.png" />
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">List of names for each group.</span><a class="headerlink" href="#student-groups-2022" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="using-toposvalbard">
-<h3>2. Using TopoSvalbard<a class="headerlink" href="#using-toposvalbard" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">List of names for each group.</span><a class="headerlink" href="#student-groups-2022" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="using-toposvalbard">
+<h3>2. Using TopoSvalbard<a class="headerlink" href="#using-toposvalbard" title="Permalink to this headline">#</a></h3>
 <p>Find and highlight the following locations using <a class="reference external" href="http://toposvalbard.npolar.no">http://toposvalbard.npolar.no</a>.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <img alt="../../../_images/3_toposvalbard.gif" src="../../../_images/3_toposvalbard.gif" />
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Showing how to make a search in Toposvalbard.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Showing how to make a search in Toposvalbard.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Mark on all locations together; then screenshot with result and paste in below.</p>
 <p><strong>Locations A</strong>: Festningen, Ebbadalen, Konusdalen, Agardhbukta, Kvalpynten, Farmhamna, Kapp Thordsen, Svea, Verlegenhuken, Sørkapp, Botneheia, Pyramiden, + your own Virtual Field Trip area</p>
 <p><strong>Locations B</strong>: Vassdalen, Blåhuken, Kvadehuken, Plurdalen, Raddedalen, Hopen, Tromsøbreen, Colesbukta, Berzeliusdalen, Grønnfjorden, Reindalspasset, Kapp Laila, Sarstangen, Petuniabukta, Adventdalen, Sysselmannbreen</p>
@@ -662,9 +782,9 @@ The main learning objectives are:</p>
 <p class="admonition-title">Task</p>
 <p>What do the locations B have in common? (hint – use Svalbox map in parallel)</p>
 </div>
-</div>
-<div class="section" id="using-svalbardkartet">
-<h3>3. Using Svalbardkartet<a class="headerlink" href="#using-svalbardkartet" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="using-svalbardkartet">
+<h3>3. Using Svalbardkartet<a class="headerlink" href="#using-svalbardkartet" title="Permalink to this headline">#</a></h3>
 <p>On SvalbardKartet <a class="reference external" href="http://svalbardkartet.npolar.no/html5/index.html?viewer=svalbardkartet.html5">http://svalbardkartet.npolar.no/html5/index.html?viewer=svalbardkartet.html5</a> note the following:</p>
 <div class="tip admonition">
 <p class="admonition-title">Task</p>
@@ -682,26 +802,32 @@ The main learning objectives are:</p>
 <div class="note admonition">
 <p class="admonition-title">Tip</p>
 <p>A tip for selecting the total area of a geological unit using <a class="reference external" href="https://geokart.npolar.no/Html5Viewer/index.html?viewer=Svalbardkartet">https://geokart.npolar.no/Html5Viewer/index.html?viewer=Svalbardkartet</a> is:</p>
-<div class="figure align-default" id="svalbadkartet-2">
+<figure class="align-default" id="svalbadkartet-2">
 <img alt="../../../_images/svalbadkartet_2.gif" src="../../../_images/svalbadkartet_2.gif" />
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Showing how to select the outcropping areas of a geological unit in Svalbardkartet.</span><a class="headerlink" href="#svalbadkartet-2" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Showing how to select the outcropping areas of a geological unit in Svalbardkartet.</span><a class="headerlink" href="#svalbadkartet-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-</div>
-<div class="section" id="oblique-aerial-imagery">
-<h3>4. Oblique aerial imagery<a class="headerlink" href="#oblique-aerial-imagery" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="oblique-aerial-imagery">
+<h3>4. Oblique aerial imagery<a class="headerlink" href="#oblique-aerial-imagery" title="Permalink to this headline">#</a></h3>
 <p>On TopoSvalbard, there are some very good old oblique area photographs. These can be used for planning field campaigns, and even to make digital models. You access them by first selecting the satellite base map, then marking on “old aerial photographs”, and clicking the arrows.</p>
-<div class="figure align-default" id="old-imagery-toposvalbard">
+<figure class="align-default" id="old-imagery-toposvalbard">
 <img alt="../../../_images/4_2_old_imagery_toposvalbard.gif" src="../../../_images/4_2_old_imagery_toposvalbard.gif" />
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Showing how to activate and search an old aerial photo from toposvalbard.</span><a class="headerlink" href="#old-imagery-toposvalbard" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Showing how to activate and search an old aerial photo from toposvalbard.</span><a class="headerlink" href="#old-imagery-toposvalbard" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Here is an example of a digital model made using 10 screenshots of these images from Fuglefjellet:</p>
-<div class="figure align-default" id="digital-model-example">
+<figure class="align-default" id="digital-model-example">
 <img alt="../../../_images/5_digital_model_example.png" src="../../../_images/5_digital_model_example.png" />
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Example of a digital model made using 10 screenshots of these images from Fuglefjellet.</span><a class="headerlink" href="#digital-model-example" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Example of a digital model made using 10 screenshots of these images from Fuglefjellet.</span><a class="headerlink" href="#digital-model-example" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <div class="tip admonition">
 <p class="admonition-title">Task</p>
@@ -710,16 +836,18 @@ The main learning objectives are:</p>
 <li><p>Take screenshots of a selection of 15 good quality partly overlapping images and save for future photogrammetry project.</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="researchinsvalbard">
-<h3>5. ResearchInSvalbard<a class="headerlink" href="#researchinsvalbard" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="researchinsvalbard">
+<h3>5. ResearchInSvalbard<a class="headerlink" href="#researchinsvalbard" title="Permalink to this headline">#</a></h3>
 <p>The RiS database is a useful portal to find out what research was done in Svalbard.
 As with all databases it has some issues (the major one being that there are many projects there that were never conducted for a variety of reasons), but overall it is a very useful tool to get an overview and plan your research so that you don’t do double-work. It can also help in logistical co-ordination between different field groups.
 Access it at <a class="reference external" href="https://researchinsvalbard.no/">https://researchinsvalbard.no/</a> and try to figure out the tasks below.</p>
-<div class="figure align-default" id="research-in-svalbard">
+<figure class="align-default" id="research-in-svalbard">
 <img alt="../../../_images/6_research_in_svalbard.png" src="../../../_images/6_research_in_svalbard.png" />
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Example of a project search in the ResearchInSvalbard database.</span><a class="headerlink" href="#research-in-svalbard" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Example of a project search in the ResearchInSvalbard database.</span><a class="headerlink" href="#research-in-svalbard" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="tip admonition">
 <p class="admonition-title">Task</p>
 <ol class="simple">
@@ -732,22 +860,26 @@ Access it at <a class="reference external" href="https://researchinsvalbard.no/"
 <li><p>List ca. 10 different campaigns in an appropriate table.</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="norwegian-petroleum-directorate-factmaps">
-<h3>6. Norwegian Petroleum Directorate FactMaps<a class="headerlink" href="#norwegian-petroleum-directorate-factmaps" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="norwegian-petroleum-directorate-factmaps">
+<h3>6. Norwegian Petroleum Directorate FactMaps<a class="headerlink" href="#norwegian-petroleum-directorate-factmaps" title="Permalink to this headline">#</a></h3>
 <p>The Norwegian Continental Shelf is – thanks to petroleum activity – one of the most data-rich part of the world, with thousands of exploration wells, and millions of kilometres of 2D and 3D seismic surveys.  This allows much quality geoscientific research, and also provides a framework for offshore CO2 storage (ongoing at Sleipner since 1996, Snøhvit since 2008 and Aurora starting now/Longship project).
 All data are owned by the companies who gather them, but become public after 2 years (raw well logs), 5 years (seismic data) and 20 years (interpretations, reports etc.). The Norwegian Petroleum Directorate (NPD) manages this immense data set, and also offers useful FactPages and FactMaps to look up – see <a class="reference external" href="https://www.npd.no/en/">https://www.npd.no/en/</a>.
 The only downside is that while Svalbard is geologically certainly part of the Barents Shelf, politically it is not, and Svalbard exploration data (see Petroleum, coal and research drilling onshore Svalbard: a historical perspective) is not readily available.</p>
-<div class="figure align-default" id="map-npd">
+<figure class="align-default" id="map-npd">
 <img alt="../../../_images/7_1_map_npd.png" src="../../../_images/7_1_map_npd.png" />
-<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">NPD FactMap from the Norwegian coast and Svalbard.</span><a class="headerlink" href="#map-npd" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="factmap-npd">
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">NPD FactMap from the Norwegian coast and Svalbard.</span><a class="headerlink" href="#map-npd" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="factmap-npd">
 <img alt="../../../_images/7_2_factmap_npd.png" src="../../../_images/7_2_factmap_npd.png" />
-<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">NPD FactMap from the Norwegian coast with the active exploration wells.</span><a class="headerlink" href="#factmap-npd" title="Permalink to this image">¶</a></p>
-</div>
-<div class="section" id="use-the-npd-factmaps-to-address-the-following-tasks">
-<h4>Use the NPD FactMaps to address the following tasks:<a class="headerlink" href="#use-the-npd-factmaps-to-address-the-following-tasks" title="Permalink to this headline">¶</a></h4>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">NPD FactMap from the Norwegian coast with the active exploration wells.</span><a class="headerlink" href="#factmap-npd" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="use-the-npd-factmaps-to-address-the-following-tasks">
+<h4>Use the NPD FactMaps to address the following tasks:<a class="headerlink" href="#use-the-npd-factmaps-to-address-the-following-tasks" title="Permalink to this headline">#</a></h4>
 <div class="tip admonition">
 <p class="admonition-title">Task</p>
 <ol class="simple">
@@ -760,10 +892,10 @@ The only downside is that while Svalbard is geologically certainly part of the B
 <li><p>What is the age of the structures?</p></li>
 </ol>
 </div>
-</div>
-</div>
-<div class="section" id="article-search-and-methods">
-<h3>7. Article search and methods<a class="headerlink" href="#article-search-and-methods" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="article-search-and-methods">
+<h3>7. Article search and methods<a class="headerlink" href="#article-search-and-methods" title="Permalink to this headline">#</a></h3>
 <p>Science is not about starting from scratch, but about contributing new knowledge to existing ones. You thus need to know what is the state of the art, and efficiently use referencing. UNIS has a license for EndNote reference manager which we will be using in the course. It allows automatic importing of references, and including pdfs of the references, for easy archiving.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -775,24 +907,24 @@ The only downside is that while Svalbard is geologically certainly part of the B
 </div>
 <p>EndNote is a desktop reference management and bibliography creation software. It exists to make your life easier when citing the sources you use for your work.
 The first step is to create a new library where you can save your favorite articles.</p>
-<div class="figure align-default" id="endnote">
+<figure class="align-default" id="endnote">
 <img alt="../../../_images/7_endnote.gif" src="../../../_images/7_endnote.gif" />
-</div>
+</figure>
 <p>Google Scholar <a class="reference external" href="https://scholar.google.com/">https://scholar.google.com/</a> is linked with it. To do so, you have to select Cite and add to EndNote. It will be a downloadable file that automatically links to your Library.</p>
-<div class="figure align-default" id="scholar">
+<figure class="align-default" id="scholar">
 <img alt="../../../_images/7_2_scholar.gif" src="../../../_images/7_2_scholar.gif" />
-</div>
+</figure>
 <p>In Word, we can insert the citation of the paper we are using. Moreover, it will automatically insert the full reference in the bibliography.</p>
-<div class="figure align-default" id="word">
+<figure class="align-default" id="word">
 <img alt="../../../_images/7_3_word.gif" src="../../../_images/7_3_word.gif" />
-</div>
+</figure>
 <p>Finally, we can edit the way the citation displays and the style we are required to use.</p>
-<div class="figure align-default" id="reference">
+<figure class="align-default" id="reference">
 <img alt="../../../_images/7_4_reference.gif" src="../../../_images/7_4_reference.gif" />
-</div>
-<div class="figure align-default" id="style">
+</figure>
+<figure class="align-default" id="style">
 <img alt="../../../_images/7_5_style.gif" src="../../../_images/7_5_style.gif" />
-</div>
+</figure>
 <div class="tip admonition">
 <p class="admonition-title">Task</p>
 <ol class="simple">
@@ -811,21 +943,21 @@ The first step is to create a new library where you can save your favorite artic
 <p class="admonition-title">Note</p>
 <p>There are other free and open access softwares for reference management and bibliography creation. One example is Mendeley.</p>
 </div>
-</div>
-<div class="section" id="svalsim-the-svalbard-geosimulator">
-<h3>8. SvalSIM – the svalbard Geosimulator<a class="headerlink" href="#svalsim-the-svalbard-geosimulator" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="svalsim-the-svalbard-geosimulator">
+<h3>8. SvalSIM – the svalbard Geosimulator<a class="headerlink" href="#svalsim-the-svalbard-geosimulator" title="Permalink to this headline">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Using the <span class="xref myst">Svalbox student server</span>, access to the following directory  \svalbox\AG222-2022\AG222\Software\SVALSIM to download SVALSIM.</p>
 </div>
 <p>Copy the SvalSim folder from the Svalbox student server to your local PC C-drive, in the folder Program files.</p>
-<div class="figure align-default" id="folder">
+<figure class="align-default" id="folder">
 <img alt="../../../_images/8_1_folder.png" src="../../../_images/8_1_folder.png" />
-</div>
+</figure>
 <p>To start the geosimulator, double click to the file SvalSim.bat</p>
-<div class="figure align-default" id="id2">
+<figure class="align-default" id="id2">
 <img alt="../../../_images/8_2.png" src="../../../_images/8_2.png" />
-</div>
+</figure>
 <p>Click to <strong>Continue</strong> for the first to pages, and using the SvalSim as standard user click on <strong>Enter</strong>.</p>
 <p>The SvalSim opening page will start. You are now ready to travel and open up the information menu.</p>
 <p>Clicking the overview button, you get a map indicating your current position as a red dot.
@@ -838,9 +970,9 @@ You can also read out:</p>
 <li><p>Elevation</p></li>
 <li><p>Speed (when flying)</p></li>
 </ul>
-<div class="figure align-default" id="id3">
+<figure class="align-default" id="id3">
 <img alt="../../../_images/8_3.png" src="../../../_images/8_3.png" />
-</div>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Almost all information in the geosimulator are geo-referenced, that means: by choosing a data object, either via the folder or via an icon, you can go to the right position (and direction).</p>
@@ -853,15 +985,15 @@ You can also read out:</p>
 <li><p>Consider using SvalSIM to “film” your journey from Longyearbyen to your field area.</p></li>
 </ol>
 </div>
-<div class="figure align-default" id="geo-svalbard">
+<figure class="align-default" id="geo-svalbard">
 <img alt="../../../_images/9_1_geo_svalbard.png" src="../../../_images/9_1_geo_svalbard.png" />
-</div>
-<div class="figure align-default" id="id4">
+</figure>
+<figure class="align-default" id="id4">
 <img alt="../../../_images/9_2_geo_svalbard.png" src="../../../_images/9_2_geo_svalbard.png" />
-</div>
-</div>
-</div>
-</div>
+</figure>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -885,9 +1017,11 @@ You can also read out:</p>
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="../../../landing-page.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -903,24 +1037,28 @@ You can also read out:</p>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Nil Rodes, Peter Betlem, Kim Senger<br/>
+  
+      &copy; Copyright 2022 (CC-BY-NC except where otherwise stated).<br/>
+</p>
+        </footer>
+    </div>
     
-      By Nil Rodes, Peter Betlem, Kim Senger<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
