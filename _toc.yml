@@ -22,3 +22,8 @@ parts:
 - caption: Resources
   chapters:
   - file: content/lessons/about/seismic_lab.md
+
+- caption: External Links
+  chapters:
+  - url: https://unisvalbard.github.io/exbooks/
+    title: UNIS Compendium Portal
