@@ -23,6 +23,10 @@ parts:
   chapters:
   - file: content/lessons/about/seismic_lab.md
 
+- caption: Questionnaire
+  chapters:
+  - file: content/survey.md
+
 - caption: External Links
   chapters:
   - url: https://unisvalbard.github.io/exbooks/
