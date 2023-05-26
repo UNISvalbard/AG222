@@ -325,7 +325,7 @@ Select _Text icon_ > Enable HTML > Paste the text below into new text layer.
 :name: doms_popup
 ```
 
-#### Display Panellum photospheres
+#### Display Pannellum photospheres
 Right click photospheres layer in map panel > _Configure pop-ups_
 
 Select _Text icon_ > Enable HTML > Paste the text below into new text layer.
