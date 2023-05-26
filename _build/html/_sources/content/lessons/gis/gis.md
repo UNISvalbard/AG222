@@ -310,6 +310,41 @@ Instead, a popup featuring all the image's metadata will show up.
 Here, the most important is to copy the svalbox_i0wpurl link - this link can be pasted into the [Pannellum panorama url link box](https://pannellum.org/documentation/overview/tutorial/) to generate a 360 view of the image.  
 
 
+### Configure Pop-ups
+#### Display Sketchfab models
+Right click dom layer in map panel > _Configure pop-ups_
+
+Select _Text icon_ > Enable HTML > Paste the text below into new text layer.
+
+
+```
+<div class="sketchfab-embed-wrapper"> <iframe src="https://sketchfab.com/models/{publ_sketchfab_id}/embed"> </iframe> </div>
+```
+
+```{figure} assets/doms_popup.gif
+:name: doms_popup
+```
+
+#### Display Panellum photospheres
+Right click photospheres layer in map panel > _Configure pop-ups_
+
+Select _Text icon_ > Enable HTML > Paste the text below into new text layer.
+
+```
+<iframe width="600" height="400" style="border-style:none;" src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama={api_link}"></iframe>
+```
+
+```{figure} assets/photospheres_popup.gif
+:name: photospheres_popup
+```
+
+```{admonition} Remove orther pop-up fields
+:class: warning
+Ensure that you remove any additional fields present in the pop-up pane.
+```
+
+
+
 ### Edit layer characteristics
 
 Depending on the layer characteristics that we want to modify we will go to:
