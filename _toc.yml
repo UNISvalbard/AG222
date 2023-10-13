@@ -46,6 +46,7 @@ parts:
   - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l4/hss_tutorial.html
     title: Automated photography lightbox
   - file: content/lessons/screen_recording/screen_recording.md
+  - file: content/lessons/about/endnote.md
 
 - caption: Questionnaire
   chapters:
