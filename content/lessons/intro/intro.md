@@ -1,5 +1,4 @@
 # Welcome to the AG222 Compendium Portal!
-
 Welcome to the AG222 Data Mining portal, a compendium made for the [AG222-Integrated Geological Methods: From Outcrop to Geomodel](https://www.unis.no/course/ag-222-integrated-geological-methods-from-outcrop-to-geomodel/) course at [The University Centre in Svalbard](https://www.unis.no/).
 
 This module covers the basic online resources to find the information you need to conduct your research in Svalbard.
@@ -7,7 +6,6 @@ This module covers the basic online resources to find the information you need t
 ```{admonition} Open access
 :class: note
 The AG222 Compendium Portal is open for everyone to follow online. It is aimed as an open-source reference work for maining information to use while conducting your research in Svalbard.
-This is a compendium for the [University Centre in Svalbard Arctic Geology 222 bachelor course](https://www.unis.no/course/ag-222-integrated-geological-methods-from-outcrop-to-geomodel/), running each spring.
 ```
 
 ```{admonition} The University Centre in Svalbard
@@ -16,9 +14,20 @@ While it is an open-access compendium, support will only be provided for the stu
 ```
 
 ## Course format and topics
+This compendium is split in several modules, consisting of interactive lectures walkthroughs, and exercises.
 
-This compendium is split in several modules, consisting of interactive lectures walkthroughs, and exercises. 
-The main learning objectives are:
+````{admonition} Exernal resources
+:class: seealso
+Some of the modules are linked to external resources, developed as part of other guides and compendiums. Note that when clicking on a page with a small box and an arrow, you will be redirected to the corresponding compendium with the original chapter. In order not to lose track of where you are, we recommend that you open these resources in a new tab.
+
+```{figure} assets/new_tab.gif
+:name: new_tab
+
+Open the external resources in a new tab.
+```
+````
+
+The main learning objectives of this compendium are:
 
 - Familiarize and use Svalbox online portal
 - Familiarize and use online resources

@@ -1,27 +1,51 @@
 format: jb-book
 root: landing-page.md
+
 parts:
+- caption: Introduction
+  chapters:
+  - file: content/lessons/intro/intro.md
+    title: Welcome!
+
 - caption: Data mining
   chapters:
   - file: content/lessons/data_mining/data_mining.md
+  - url: https://svalbox.github.io/Svalbox-cookbook/notes/interactive-portal.html
+    title: Svalbox CookBook
   - file: content/lessons/svalbox_server/svalbox_server.md
-  - file: content/lessons/screen_recording/screen_recording.md
+  - file: content/lessons/exercises/e1.md
+    title: Exercise 1 - Interpreting DOMs
+  - file: content/lessons/exercises/e2.md
+    title: Exercise 2 - Prepare for field work in Svalbard
 
 - caption: GIS
   chapters:
   - file: content/lessons/gis/gis.md
-    sections:
-    - file: content/lessons/gis_exercise/gis_exercise.md
+  - file: content/lessons/exercises/e3.md
+    title: Exercise 3 - Where did he go?
   - file: content/lessons/story_maps/story_maps.md
+    title: Story Maps
+  - file: content/lessons/exercises/e4.md
+    title: Exercise 4 - Create a Virtual Field Trip
+
+- caption: UAV-based data acquisition
+  chapters:
+  - url: https://unisvalbard.github.io/Geo-UAV/landing-page.html
+    title: Geo-UAV
 
 - caption: Structure-from-motion
   chapters:
   - url: https://unisvalbard.github.io/Geo-SfM/landing-page.html
     title: Geo-SfM module
+  - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l5/geomodel_tutorial.html
+    title: Geomodeling tutorial
 
 - caption: Resources
   chapters:
   - file: content/lessons/about/seismic_lab.md
+  - url: https://unisvalbard.github.io/Geo-SfM/content/lessons/l4/hss_tutorial.html
+    title: Automated photography lightbox
+  - file: content/lessons/screen_recording/screen_recording.md
 
 - caption: Questionnaire
   chapters:
