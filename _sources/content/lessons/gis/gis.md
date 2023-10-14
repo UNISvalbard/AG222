@@ -277,7 +277,7 @@ As such, it may be wise to import the toposvalbard data straight into ArcGIS by 
 
 Then select *New ArcGIS Server*, and fill out the Server URL as below:
 
-```url
+```
 https://geodata.npolar.no/arcgis/rest/services/
 ```
 
@@ -285,10 +285,10 @@ Once connected, drag over the **NP_Basiskart_Svalbard_WMTS_32633** onto your map
 
 #### Svalbox server
 
-Although you could probably manually check the [svalbox](www.svalbox.no/map) webpage and check which outcrops are closest, easier ways exist.
+Although you could probably manually check the [svalbox](http://www.svalbox.no/map) webpage and check which outcrops are closest, easier ways exist.
 Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the Connections icon. Then select New ArcGIS Server, and fill out the Server URL as below:
 
-```url
+```
 http://svalbox.unis.no/arcgis/rest/services/
 ```
 
@@ -305,7 +305,7 @@ Then you should be able to find the Svalbox data in the Catalog panel, and you c
 
 Once the Svalbox ArcGIS server has been added to your project, drag and drop the images360 layer into your map.
 The location of 360 images should now be visible on your map.
-However, when clicking on them, you will not be shown the 360 image in the way it is served to you on [www.svalbox.no/map](www.svalbox.no/map).
+However, when clicking on them, you will not be shown the 360 image in the way it is served to you on [www.svalbox.no/map](http://www.svalbox.no/map).
 Instead, a popup featuring all the image's metadata will show up.
 Here, the most important is to copy the svalbox_i0wpurl link - this link can be pasted into the [Pannellum panorama url link box](https://pannellum.org/documentation/overview/tutorial/) to generate a 360 view of the image.  
 
@@ -325,7 +325,7 @@ Select _Text icon_ > Enable HTML > Paste the text below into new text layer.
 :name: doms_popup
 ```
 
-#### Display Panellum photospheres
+#### Display Pannellum photospheres
 Right click photospheres layer in map panel > _Configure pop-ups_
 
 Select _Text icon_ > Enable HTML > Paste the text below into new text layer.

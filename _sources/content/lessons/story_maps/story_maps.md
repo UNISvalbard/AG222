@@ -103,6 +103,9 @@ Simply click on the text box at the bottom and copy the box's contents.
 Go back to story maps and paste the URL link. Click *Add* to finalize.
 Now the Svalbox model is embedded in your story!
 
+### Embedding a Photo sphere
+
+Copy the link from the 360 data layer in ArcGIS Story Maps into Pannellum, and then use the embed code.
 
 ### Add a map *slider*
 
