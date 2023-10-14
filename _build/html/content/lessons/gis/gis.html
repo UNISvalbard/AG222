@@ -571,7 +571,7 @@ Then search for <em>GPX to Features</em>.</p>
 <figure class="align-default" id="import-gpx">
 <img alt="../../../_images/4_import_gpx.gif" src="../../../_images/4_import_gpx.gif" />
 <figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Select the GPX file as <em>Input to GPX File</em>, give the <em>Output Feature class</em> a distinguishable name, and click RUN to add the GPS track to the map.</span><a class="headerlink" href="#import-gpx" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Select the GPX file as <em>Input to GPX File</em>, give the <em>Output Feature class</em> a distinguishable name, and click RUN to add the GPS track to the map.</span><a class="headerlink" href="#import-gpx" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -596,7 +596,7 @@ All the DTM in svalbox.no are uploaded there to assure free access to the data.<
 <figure class="align-default" id="download-zenodo">
 <img alt="../../../_images/download_zenodo.gif" src="../../../_images/download_zenodo.gif" />
 <figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Click on the DOI link of the model. A new tab will open linking to the <a class="reference external" href="https://zenodo.org/">Zenodo</a> database, from where you can download all the data.</span><a class="headerlink" href="#download-zenodo" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Click on the DOI link of the model. A new tab will open linking to the <a class="reference external" href="https://zenodo.org/">Zenodo</a> database, from where you can download all the data.</span><a class="headerlink" href="#download-zenodo" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -662,16 +662,16 @@ Click an exact point on the image and then click this point in the map before sa
 <p>While Npolar provides a very useful service through <a class="reference external" href="https://toposvalbard.npolar.no/">toposvalbard</a> and <a class="reference external" href="https://geokart.npolar.no/Html5Viewer/index.html?viewer=Svalbardkartet">svalbardkartet</a>, these have limited abilities for interacting with the data.
 As such, it may be wise to import the toposvalbard data straight into ArcGIS by going to the Insert tab and click on the Connections icon.</p>
 <p>Then select <em>New ArcGIS Server</em>, and fill out the Server URL as below:</p>
-<div class="highlight-url notranslate"><div class="highlight"><pre><span></span>https://geodata.npolar.no/arcgis/rest/services/
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">geodata</span><span class="o">.</span><span class="n">npolar</span><span class="o">.</span><span class="n">no</span><span class="o">/</span><span class="n">arcgis</span><span class="o">/</span><span class="n">rest</span><span class="o">/</span><span class="n">services</span><span class="o">/</span>
 </pre></div>
 </div>
 <p>Once connected, drag over the <strong>NP_Basiskart_Svalbard_WMTS_32633</strong> onto your map.</p>
 </section>
 <section id="svalbox-server">
 <h4>Svalbox server<a class="headerlink" href="#svalbox-server" title="Permalink to this headline">#</a></h4>
-<p>Although you could probably manually check the <span class="xref myst">svalbox</span> webpage and check which outcrops are closest, easier ways exist.
+<p>Although you could probably manually check the <a class="reference external" href="http://www.svalbox.no/map">svalbox</a> webpage and check which outcrops are closest, easier ways exist.
 Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the Connections icon. Then select New ArcGIS Server, and fill out the Server URL as below:</p>
-<div class="highlight-url notranslate"><div class="highlight"><pre><span></span>http://svalbox.unis.no/arcgis/rest/services/
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">svalbox</span><span class="o">.</span><span class="n">unis</span><span class="o">.</span><span class="n">no</span><span class="o">/</span><span class="n">arcgis</span><span class="o">/</span><span class="n">rest</span><span class="o">/</span><span class="n">services</span><span class="o">/</span>
 </pre></div>
 </div>
 <p>Then you should be able to find the Svalbox data in the Catalog panel, and you can drag and drop different data sets straight into your map.</p>
@@ -682,7 +682,7 @@ Let’s proceed by connecting directly to the Svalbox ArcGIS server. Go to the C
 <span id="section-gis-360image-to-frame"></span><h5>Harvesting metadata: the 360image to iframe example<a class="headerlink" href="#harvesting-metadata-the-360image-to-iframe-example" title="Permalink to this headline">#</a></h5>
 <p>Once the Svalbox ArcGIS server has been added to your project, drag and drop the images360 layer into your map.
 The location of 360 images should now be visible on your map.
-However, when clicking on them, you will not be shown the 360 image in the way it is served to you on <span class="xref myst">www.svalbox.no/map</span>.
+However, when clicking on them, you will not be shown the 360 image in the way it is served to you on <a class="reference external" href="http://www.svalbox.no/map">www.svalbox.no/map</a>.
 Instead, a popup featuring all the image’s metadata will show up.
 Here, the most important is to copy the svalbox_i0wpurl link - this link can be pasted into the <a class="reference external" href="https://pannellum.org/documentation/overview/tutorial/">Pannellum panorama url link box</a> to generate a 360 view of the image.</p>
 </section>
