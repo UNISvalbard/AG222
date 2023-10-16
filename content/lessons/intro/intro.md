@@ -1,5 +1,5 @@
 # Welcome to the AG222 Compendium Portal!
-Welcome to the AG222 Data Mining portal, a compendium made for the [AG222-Integrated Geological Methods: From Outcrop to Geomodel](https://www.unis.no/course/ag-222-integrated-geological-methods-from-outcrop-to-geomodel/) course at [The University Centre in Svalbard](https://www.unis.no/).
+Welcome to the AG222 Data Mining portal, a compendium made for the [AG222-Integrated Geological Methods: From Outcrop to Geomodel](https://www.unis.no/courses/ag-222-integrated-geological-methods-from-outcrop-to-geomodel/) course at [The University Centre in Svalbard](https://www.unis.no/).
 
 This module covers the basic online resources to find the information you need to conduct your research in Svalbard.
 
@@ -10,7 +10,7 @@ The AG222 Compendium Portal is open for everyone to follow online. It is aimed a
 
 ```{admonition} The University Centre in Svalbard
 :class: note
-While it is an open-access compendium, support will only be provided for the students joining the [University Centre in Svalbard Arctic Geology 222 bachelor course](https://www.unis.no/course/ag-222-integrated-geological-methods-from-outcrop-to-geomodel/), running each spring.
+While it is an open-access compendium, support will only be provided for the students joining the [University Centre in Svalbard Arctic Geology 222 bachelor course](https://www.unis.no/courses/ag-222-integrated-geological-methods-from-outcrop-to-geomodel/), running each spring.
 ```
 
 ## Course format and topics
